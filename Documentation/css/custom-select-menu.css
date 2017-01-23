@@ -1,0 +1,158 @@
+/* =Custom Select Menu */
+
+.custom-select-menu {
+	display : block;
+	position : relative;
+	text-align : left;
+}
+
+.custom-select-menu label {
+	display : block;
+	position : relative;
+	/* We're giving the label a specific width. 
+	Don't forget to set a width for the list of options
+	as well (see below). */
+	/*
+	width : 186px;
+	padding : 12px 32px 12px 10px;
+	*/
+	height : 44px;
+	padding : 4px 28px 4px 12px;
+	border-width : 1px;
+	border-style : solid;
+	overflow : hidden;
+	line-height : 2;
+
+	/* Prevents text-selection on the label. */
+	-moz-user-select : none;
+	-ms-user-select : none;
+	-webkit-touch-callout : none;
+	-webkit-user-select : none;  
+	user-select : none;
+
+	-webkit-border-radius : 2px;
+	-moz-border-radius : 2px;
+	-ms-border-radius : 2px;
+	-o-border-radius : 2px;
+	border-radius : 2px;
+
+	-webkit-transition :
+		border 0.2s ease,
+		color 0.2s ease,
+		background 0.2s ease;
+	-moz-transition :
+		border 0.2s ease,
+		color 0.2s ease,
+		background 0.2s ease;
+	-ms-transition :
+		border 0.2s ease,
+		color 0.2s ease,
+		background 0.2s ease;
+	-o-transition :
+		border 0.2s ease,
+		color 0.2s ease,
+		background 0.2s ease;
+	transition :
+		border 0.2s ease,
+		color 0.2s ease,
+		background 0.2s ease;
+}
+
+/* Sometimes you want to change the look of the menu/label
+when a selection with a value has been made. In this case,
+we're increasing the contrast of the font color. */
+.custom-select-menu label.selection-made {
+}
+
+/* Here we're adding a down arrow to make it look more
+like a select menu. */
+.custom-select-menu label:after {
+	border-top-width : 6px;
+	border-right-width : 6px;
+	border-left-width : 6px;
+	border-top-style : solid;
+	border-right-style : solid;
+	border-left-style : solid;
+	content : '';
+	position : absolute;
+	display : block;
+	right : 10px;
+	top : 19px;
+
+	-webkit-transition :
+		border 0.2s ease;
+	-moz-transition :
+		border 0.2s ease;
+	-ms-transition :
+		border 0.2s ease;
+	-o-transition :
+		border 0.2s ease;
+	transition :
+		border 0.2s ease;
+}
+
+/* When the list of options is displayed we'll remove
+the bottom border-radius on the label so that it sits
+flush next the menu. */
+.custom-select-menu label.opened {
+	-webkit-border-radius : 2px 2px 0 0;
+	-moz-border-radius : 2px 2px 0 0;
+	-ms-border-radius : 2px 2px 0 0;
+	-o-border-radius : 2px 2px 0 0;
+	border-radius : 2px 2px 0 0;
+}
+.custom-select-menu label.opened:after {
+	top : 13px;
+	border-bottom-width : 6px;
+	border-bottom-style : solid;
+}
+
+/* When the label has focus or is hovered over, increase
+the contrast of the border. */
+.custom-select-menu:focus label,
+.custom-select-menu:hover label {
+}
+
+/* If you don't want the menu to be too tall, then 
+give it a max-height, but don't forget to allow it to
+scroll so all the options are visible. */
+.custom-select-menu div.select {
+	position : absolute;
+	z-index : 1;
+	top : 100%;
+	right : 0;
+	left : 0;
+	border-right-width : 1px;
+	border-bottom-width : 1px;
+	border-left-width : 1px;
+	border-right-style : solid;
+	border-bottom-style : solid;
+	border-left-style : solid;
+	max-height : 240px;
+	overflow-x : hidden;
+	overflow-y : scroll; /* Allow it to scroll vertically. */
+	width : 100%;
+}
+.custom-select-menu span {
+	display : block;
+	cursor : pointer;
+	padding : 6px 16px 6px 12px;
+	font-size : 87.5%;/* 14px */
+
+	-webkit-transition :
+		background 0.2s ease;
+	-moz-transition :
+		background 0.2s ease;
+	-ms-transition :
+		background 0.2s ease;
+	-o-transition :
+		background 0.2s ease;
+	transition :
+		background 0.2s ease;
+}
+/* When you hover over an option we'll change the 
+background color. We'll do the same when an option 
+is selected. */
+.custom-select-menu span:hover,
+.custom-select-menu .selected {
+}

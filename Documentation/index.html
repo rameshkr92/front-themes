@@ -1,0 +1,3439 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>
+			Progressive documentation
+		</title>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<!--
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+		-->
+		<!--
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-glyphicons.css" rel="stylesheet">
+		-->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<!--mCustomScrollbar-->
+		<link rel="stylesheet" media="screen" href="css/jquery.mCustomScrollbar.css" />
+		<!--/mCustomScrollbar-->
+		<link rel="stylesheet" media="screen" href="css/social-icons.css" />
+		<link rel="stylesheet" media="screen" href="css/magnific-popup.css" />
+		<!--SyntaxHighlighter-->
+		<!--
+		<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+		-->
+		<link href="css/shThemeDocumentation.css" rel="stylesheet" type="text/css" />
+		<!--/SyntaxHighlighter-->
+		<!--Open Sans-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<!--/Open Sans-->
+		<!--Custom Select Menu-->
+		<link rel="stylesheet" media="screen" href="css/custom-select-menu.css" />
+		<!--/Custom Select Menu-->
+		<link rel="stylesheet" media="screen" href="css/documentation.css" />
+		
+		<!--/Custom Select Menu-->
+		<link rel="stylesheet" media="screen" href="css/override.css" />
+		<!--[if gte IE 9]>
+			<style type="text/css">
+				.frame .overlay {
+					filter : none;
+				}
+			</style>
+		<![endif]-->
+		<style type="text/css">
+			.wrapper.clip {
+				background-image : url( 'img/index-image0.jpg' );
+			}
+		</style>
+	</head>
+	<body>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<script type="text/javascript">
+			var element = document.createElement( 'div' );
+			element.id = 'overlay';
+			element.className = 'theme-white overlay';
+			element.style.position = 'fixed';
+			element.style.zIndex = 2147483647;
+			document.body.appendChild( element );
+		</script>
+		<div class="header-pagination">
+		</div>
+		<header class="header theme-white">
+			<section class="container">
+				<span class="pull-left">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="14px" viewBox="0 0 25 14" style="enable-background:new 0 0 25 14;" xml:space="preserve">
+						<style type="text/css">
+							<![CDATA[
+								.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#000000;}
+							]]>
+						</style>
+						<switch>
+							<g>
+								<path class="st0" d="M24,12H1c-0.6,0-1,0.4-1,1s0.4,1,1,1h23c0.6,0,1-0.4,1-1S24.6,12,24,12z M24,6H1C0.4,6,0,6.4,0,7    c0,0.6,0.4,1,1,1h23c0.6,0,1-0.4,1-1C25,6.4,24.6,6,24,6z M1,2h23c0.6,0,1-0.4,1-1c0-0.6-0.4-1-1-1H1C0.4,0,0,0.4,0,1    C0,1.6,0.4,2,1,2z"/>
+							</g>
+							<foreignObject width="25" height="14">
+								<span class="pull-left fa">
+									&#xf0c9;
+								</span>
+							</foreignObject>
+						</switch>
+					</svg>
+					<span class="pull-left hidden-xs">
+						Contents
+					</span>
+				</span>
+				<div class="menu">
+					<div class="caption">
+						<div class="logo">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="24px" viewBox="0 0 50 24" style="enable-background:new 0 0 50 24;" xml:space="preserve">
+								<style type="text/css">
+									.itembridge-logo{fill-rule:evenodd;clip-rule:evenodd;fill:#111111;}
+								</style>
+								<switch>
+									<path class="itembridge-logo" d="M39.9,24c-0.5-7.8-7-14-14.9-14s-14.4,6.2-14.9,14h-10C0.6,10.7,11.5,0,25,0c13.5,0,24.4,10.7,24.9,24H39.9z"></path>
+									<foreignObject width="50" height="24">
+										<img src="img/itembridge-logo.png" alt="">
+									</foreignObject>
+								</switch>
+							</svg>
+						</div>
+						Documentation
+					</div>
+				</div>
+				<a class="pull-right hidden-xs" href="http://support.itembridge.com/">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
+						<style type="text/css">
+							<![CDATA[
+								.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#000000;}
+							]]>
+						</style>
+						<switch>
+							<g vector-effect="non-scaling-stroke">
+								<path class="st1" d="M27,13.5c0,0.6,0,1.1-0.1,1.7c0,0.1,0,0.3-0.1,0.4c-0.1,0.5-0.2,0.9-0.3,1.4c0,0.1,0,0.2-0.1,0.2   c-0.3,1.1-0.8,2.2-1.4,3.2c-1.2,2-2.8,3.6-4.8,4.8c-1,0.6-2,1-3.2,1.4c-0.1,0-0.2,0-0.2,0.1c-0.4,0.1-0.9,0.2-1.4,0.3   c-0.1,0-0.3,0-0.4,0.1C14.6,27,14.1,27,13.5,27l0,0l0,0c-0.6,0-1.1,0-1.7-0.1c-0.1,0-0.3,0-0.4-0.1c-0.5-0.1-0.9-0.2-1.4-0.3   c-0.1,0-0.2,0-0.2-0.1c-1.1-0.3-2.2-0.8-3.2-1.4c-2-1.2-3.6-2.8-4.8-4.8c-0.6-1-1-2-1.4-3.2c0-0.1,0-0.2-0.1-0.2   c-0.1-0.4-0.2-0.9-0.3-1.4c0-0.1,0-0.3-0.1-0.4C0,14.6,0,14.1,0,13.5l0,0l0,0c0-0.6,0-1.1,0.1-1.7c0-0.1,0-0.3,0.1-0.4   C0.3,11,0.3,10.5,0.5,10c0-0.1,0-0.2,0.1-0.2c0.3-1.1,0.8-2.2,1.4-3.2C3,4.7,4.7,3,6.7,1.9c1-0.6,2-1,3.2-1.4c0.1,0,0.2,0,0.2-0.1   c0.4-0.1,0.9-0.2,1.4-0.3c0.1,0,0.3,0,0.4-0.1C12.4,0,12.9,0,13.5,0l0,0l0,0c0.6,0,1.1,0,1.7,0.1c0.1,0,0.3,0,0.4,0.1   C16,0.3,16.5,0.3,17,0.5c0.1,0,0.2,0,0.2,0.1c1.1,0.3,2.2,0.8,3.2,1.4c2,1.2,3.6,2.8,4.8,4.8c0.6,1,1,2,1.4,3.2   c0,0.1,0,0.2,0.1,0.2c0.1,0.4,0.2,0.9,0.3,1.4c0,0.1,0,0.3,0.1,0.4C27,12.4,27,12.9,27,13.5L27,13.5L27,13.5z M5.7,10.4L3.1,7.9   c-0.9,1.7-1.5,3.5-1.5,5.6c0,2,0.6,3.9,1.5,5.6l2.5-2.5c-0.4-1-0.6-2-0.6-3.1C5.1,12.4,5.3,11.4,5.7,10.4z M13.5,25.3   c2,0,3.9-0.6,5.6-1.5l-2.5-2.5c-1,0.4-2,0.6-3.1,0.6s-2.1-0.2-3.1-0.6l-2.5,2.5C9.6,24.8,11.5,25.3,13.5,25.3z M13.5,1.7   c-2,0-3.9,0.6-5.6,1.5l2.5,2.5c1-0.4,2-0.6,3.1-0.6s2.1,0.2,3.1,0.6l2.5-2.5C17.4,2.2,15.5,1.7,13.5,1.7z M20,11.8L20,11.8   c-0.6-2.3-2.4-4.2-4.8-4.8l0,0l0,0c-0.2-0.1-0.4-0.1-0.7-0.1c-0.3-0.1-0.7-0.1-1-0.1s-0.7,0-1,0.1c-0.2,0-0.5,0.1-0.7,0.1l0,0l0,0   C9.4,7.6,7.6,9.4,7,11.8l0,0l0,0c-0.1,0.2-0.1,0.4-0.1,0.7c-0.1,0.3-0.1,0.7-0.1,1c0,0.4,0,0.7,0.1,1c0,0.2,0.1,0.5,0.1,0.7l0,0   l0,0c0.6,2.3,2.4,4.2,4.8,4.8l0,0l0,0c0.2,0.1,0.4,0.1,0.7,0.1c0.3,0.1,0.7,0.1,1,0.1s0.7,0,1-0.1c0.2,0,0.5-0.1,0.7-0.1l0,0l0,0   c2.3-0.6,4.2-2.4,4.8-4.8l0,0l0,0c0.1-0.2,0.1-0.4,0.1-0.7c0.1-0.3,0.1-0.7,0.1-1c0-0.4,0-0.7-0.1-1C20.1,12.2,20.1,12,20,11.8   L20,11.8z M23.9,7.9l-2.5,2.5c0.4,1,0.6,2,0.6,3.1c0,1.1-0.2,2.1-0.6,3.1l2.5,2.5c0.9-1.7,1.5-3.5,1.5-5.6   C25.3,11.5,24.8,9.6,23.9,7.9z"/>
+							</g>
+							<foreignObject width="27" height="27">
+								<span class="fa">
+									&#xf0e6;
+								</span>
+							</foreignObject>
+						</switch>
+					</svg>
+					Support
+				</a>
+			</section>
+		</header>
+		<aside class="theme-color">
+			<div class="caption">
+				<h6>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="14px" viewBox="0 0 25 14" style="enable-background:new 0 0 25 14;" xml:space="preserve">
+						<style type="text/css">
+							<![CDATA[
+								.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+							]]>
+						</style>
+						<switch>
+							<g>
+								<path class="st3" d="M24,12H1c-0.6,0-1,0.4-1,1s0.4,1,1,1h23c0.6,0,1-0.4,1-1S24.6,12,24,12z M24,6H1C0.4,6,0,6.4,0,7    c0,0.6,0.4,1,1,1h23c0.6,0,1-0.4,1-1C25,6.4,24.6,6,24,6z M1,2h23c0.6,0,1-0.4,1-1c0-0.6-0.4-1-1-1H1C0.4,0,0,0.4,0,1    C0,1.6,0.4,2,1,2z"/>
+							</g>
+							<foreignObject width="25" height="14">
+								<span class="fa icon">
+									&#xf0c9;
+								</span>
+							</foreignObject>
+						</switch>
+					</svg>
+					Contents
+					<span class="pull-right">
+						<svg class="pull-right" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
+							<style type="text/css">
+								<![CDATA[
+									.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+								]]>
+							</style>
+							<switch>
+								<g>
+									<path class="st4" d="M21.3,5L22,5.7L5.7,22L5,21.3L21.3,5z"/>
+									<path class="st4" d="M5,5.7L5.7,5L22,21.3L21.3,22L5,5.7z"/>
+								</g>
+								<foreignObject width="27" height="27">
+									<span class="fa">
+										&#xf100;
+									</span>
+								</foreignObject>
+							</switch>
+						</svg>
+					</span>
+				</h6>
+			</div>
+			<div class="init-mCustomScrollbar" id="navigation">
+				<ul class="nav">
+					<li>
+						<a class="scroll" href="#Introduction">
+							Introduction
+						</a>
+					<li>
+						<a class="scroll" href="#htmlStructure">
+							HTML Structure
+						</a>
+						<li>
+							<a class="scroll sub-1" href="#structure-top-panel">
+								Top Bar
+							</a>
+						<li>
+							<a class="scroll sub-1" href="#structure-header">
+								Header
+							</a>
+						<li>
+							<a class="scroll sub-1" href="#structure-main">
+								Main Content
+							</a>
+							<li>
+								<a class="scroll sub-2" href="#e-accordion-toggles">
+									Accordion & Toggles
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-animated-content">
+									Animations
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-social-icons">
+									Buttons & Social Icons
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-carousel-sliders">
+									Carousels & Sliders
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-chart">
+									Charts
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-tagline-boxes">
+									Container
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-full-width-section">
+									Content Band
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-dividers">
+									Dividers & Gaps
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-content-boxes">
+									Featured Box
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-font-awesome-icons">
+									Font Awesome Icons
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-image-frames">
+									Frames
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-google-maps">
+									Google Maps
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-livicons">
+									LivIcons
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-media">
+									Media
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-alert-messages">
+									Notification
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-person">
+									Person
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-post-sliders">
+									Posts Sliders
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-pricing-tables">
+									Pricing and Data Tables
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-progress-bar">
+									Progress Bars
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-recent-posts">
+									Recent Posts
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-shop-elements">
+									Shop Elements
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-sequence">
+									Sequence
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-social-feed">
+									Social Feed
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-tabs">
+									Tabs
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-testimonials">
+									Testimonials
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-text-rotation">
+									Text Rotation
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-timeline">
+									Timeline
+								</a>
+							<li>
+								<a class="scroll sub-2" href="#e-recent-work">
+									Works
+								</a>
+						<li>
+							<a class="scroll sub-1" href="#structure-sidebar">
+								Sidebar
+							</a>
+						<li>
+							<a class="scroll sub-1" href="#structure-footer">
+								Footer
+							</a>
+						<li>
+							<a class="scroll sub-1" href="#one-page">
+								One Page Site
+							</a>
+					<li>
+						<a class="scroll" href="#customizer">
+							Color Customizer
+						</a>
+					<li>
+						<a class="scroll" href="#retina">
+							Retina Ready
+						</a>
+					<li>
+						<a class="scroll" href="#cssFiles">
+							CSS Files and Structure
+						</a>
+					<li>
+						<a class="scroll" href="#javascript">
+							JavaScript
+						</a>
+					<li>
+						<a class="scroll" href="#fonts-used">
+							Font used
+						</a>
+					
+				</ul>
+			</div>
+			<div class="more">
+				More&hellip;
+			</div>
+		</aside>
+		<main role="main">
+			<article class="theme-white alt background">
+				<section class="underlay">
+					<div class="container">
+						<div class="wrapper clip text-center">
+							<p>
+								<small>
+									revision #1 dated 06.03.2014
+								</small>
+							</p>
+							<img src="img/logo.png" alt="" />
+							<p class="description" >
+								Multipurpose website template
+							</p>
+							<span class="active">
+								User Guide
+							</span>
+						</div>
+						<div class="support theme-color row">
+							<a class="col-lg-12 col-md-12 col-sm-5 col-xs-12 row" href="http://support.itembridge.com/">
+								<div class="outline stretch-height text-center col-lg-6 col-md-7 col-sm-8 col-xs-12">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px" height="34px" viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
+										<style type="text/css">
+											<![CDATA[
+												.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#000000;}
+											]]>
+										</style>
+										<switch>
+											<g vector-effect="non-scaling-stroke">
+												<path class="st5" d="M27,13.5c0,0.6,0,1.1-0.1,1.7c0,0.1,0,0.3-0.1,0.4c-0.1,0.5-0.2,0.9-0.3,1.4c0,0.1,0,0.2-0.1,0.2   c-0.3,1.1-0.8,2.2-1.4,3.2c-1.2,2-2.8,3.6-4.8,4.8c-1,0.6-2,1-3.2,1.4c-0.1,0-0.2,0-0.2,0.1c-0.4,0.1-0.9,0.2-1.4,0.3   c-0.1,0-0.3,0-0.4,0.1C14.6,27,14.1,27,13.5,27l0,0l0,0c-0.6,0-1.1,0-1.7-0.1c-0.1,0-0.3,0-0.4-0.1c-0.5-0.1-0.9-0.2-1.4-0.3   c-0.1,0-0.2,0-0.2-0.1c-1.1-0.3-2.2-0.8-3.2-1.4c-2-1.2-3.6-2.8-4.8-4.8c-0.6-1-1-2-1.4-3.2c0-0.1,0-0.2-0.1-0.2   c-0.1-0.4-0.2-0.9-0.3-1.4c0-0.1,0-0.3-0.1-0.4C0,14.6,0,14.1,0,13.5l0,0l0,0c0-0.6,0-1.1,0.1-1.7c0-0.1,0-0.3,0.1-0.4   C0.3,11,0.3,10.5,0.5,10c0-0.1,0-0.2,0.1-0.2c0.3-1.1,0.8-2.2,1.4-3.2C3,4.7,4.7,3,6.7,1.9c1-0.6,2-1,3.2-1.4c0.1,0,0.2,0,0.2-0.1   c0.4-0.1,0.9-0.2,1.4-0.3c0.1,0,0.3,0,0.4-0.1C12.4,0,12.9,0,13.5,0l0,0l0,0c0.6,0,1.1,0,1.7,0.1c0.1,0,0.3,0,0.4,0.1   C16,0.3,16.5,0.3,17,0.5c0.1,0,0.2,0,0.2,0.1c1.1,0.3,2.2,0.8,3.2,1.4c2,1.2,3.6,2.8,4.8,4.8c0.6,1,1,2,1.4,3.2   c0,0.1,0,0.2,0.1,0.2c0.1,0.4,0.2,0.9,0.3,1.4c0,0.1,0,0.3,0.1,0.4C27,12.4,27,12.9,27,13.5L27,13.5L27,13.5z M5.7,10.4L3.1,7.9   c-0.9,1.7-1.5,3.5-1.5,5.6c0,2,0.6,3.9,1.5,5.6l2.5-2.5c-0.4-1-0.6-2-0.6-3.1C5.1,12.4,5.3,11.4,5.7,10.4z M13.5,25.3   c2,0,3.9-0.6,5.6-1.5l-2.5-2.5c-1,0.4-2,0.6-3.1,0.6s-2.1-0.2-3.1-0.6l-2.5,2.5C9.6,24.8,11.5,25.3,13.5,25.3z M13.5,1.7   c-2,0-3.9,0.6-5.6,1.5l2.5,2.5c1-0.4,2-0.6,3.1-0.6s2.1,0.2,3.1,0.6l2.5-2.5C17.4,2.2,15.5,1.7,13.5,1.7z M20,11.8L20,11.8   c-0.6-2.3-2.4-4.2-4.8-4.8l0,0l0,0c-0.2-0.1-0.4-0.1-0.7-0.1c-0.3-0.1-0.7-0.1-1-0.1s-0.7,0-1,0.1c-0.2,0-0.5,0.1-0.7,0.1l0,0l0,0   C9.4,7.6,7.6,9.4,7,11.8l0,0l0,0c-0.1,0.2-0.1,0.4-0.1,0.7c-0.1,0.3-0.1,0.7-0.1,1c0,0.4,0,0.7,0.1,1c0,0.2,0.1,0.5,0.1,0.7l0,0   l0,0c0.6,2.3,2.4,4.2,4.8,4.8l0,0l0,0c0.2,0.1,0.4,0.1,0.7,0.1c0.3,0.1,0.7,0.1,1,0.1s0.7,0,1-0.1c0.2,0,0.5-0.1,0.7-0.1l0,0l0,0   c2.3-0.6,4.2-2.4,4.8-4.8l0,0l0,0c0.1-0.2,0.1-0.4,0.1-0.7c0.1-0.3,0.1-0.7,0.1-1c0-0.4,0-0.7-0.1-1C20.1,12.2,20.1,12,20,11.8   L20,11.8z M23.9,7.9l-2.5,2.5c0.4,1,0.6,2,0.6,3.1c0,1.1-0.2,2.1-0.6,3.1l2.5,2.5c0.9-1.7,1.5-3.5,1.5-5.6   C25.3,11.5,24.8,9.6,23.9,7.9z"/>
+											</g>
+											<foreignObject width="34" height="34">
+												<span class="fa">
+													&#xf0e6;
+												</span>
+											</foreignObject>
+										</switch>
+									</svg>
+									Support
+								</div>
+								<div class="click stretch-height col-lg-9 col-md-9 col-sm-9 col-xs-12">
+									Do you need support? Just click!
+								</div>
+							</a>
+							<div class="clearfix visible-xs">
+							</div>
+							<div class="social col-lg-5 col-md-5 col-sm-7 col-xs-12 row">
+								<a class="pull-right col-lg-3 col-md-3 col-sm-3 col-xs-6 behance clip" href="http://www.behance.net/follow/1619239">
+									<div class="social pull-left stretch-both">
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="15px" viewBox="0 0 24 13" style="enable-background:new 0 0 24 13;" xml:space="preserve">
+											<style type="text/css">
+												<![CDATA[
+													.st6{fill:#FFFFFF;}
+												]]>
+											</style>
+											<switch>
+												<g>
+													<path class="st6" d="M9.6,5.9c0.5-0.2,0.8-0.5,1.1-0.7c0.4-0.5,0.7-1.1,0.7-1.9c0-0.8-0.2-1.4-0.7-1.9C10,0.5,8.8,0,7,0H0v12.7    h6.5c0.7,0,1.4-0.1,2-0.2c0.6-0.1,1.2-0.3,1.6-0.6c0.4-0.3,0.8-0.6,1-1c0.4-0.6,0.6-1.3,0.6-2c0-0.7-0.2-1.3-0.6-1.9    C10.9,6.5,10.4,6.1,9.6,5.9z M2.9,2.2H6c0.7,0,1.3,0.1,1.7,0.2C8.3,2.6,8.5,3,8.5,3.6c0,0.5-0.2,0.9-0.6,1.1C7.5,4.9,7,5,6.4,5    H2.9V2.2z M7.9,10.3c-0.4,0.1-0.8,0.2-1.5,0.2H2.9V7.1h3.6c0.6,0,1.1,0.1,1.4,0.2C8.5,7.6,8.8,8,8.8,8.7C8.8,9.5,8.5,10,7.9,10.3z     M23.9,6.8c-0.1-0.7-0.4-1.4-0.9-1.9c-0.5-0.6-1.1-1.1-1.9-1.4c-0.7-0.3-1.6-0.4-2.5-0.4c-1.6,0-2.8,0.4-3.8,1.3    c-1,0.9-1.5,2.1-1.5,3.7c0,1.7,0.5,3,1.6,3.8c1.1,0.8,2.3,1.2,3.8,1.2c1.7,0,3.1-0.5,4-1.4c0.6-0.6,1-1.1,1-1.7H21    c-0.2,0.3-0.4,0.5-0.6,0.6C20,10.9,19.5,11,18.9,11c-0.6,0-1.1-0.1-1.5-0.3c-0.7-0.4-1.1-1-1.1-2H24C24,7.9,24,7.3,23.9,6.8z     M16.3,7.1C16.4,6.5,16.6,6,17,5.6c0.4-0.4,1-0.5,1.7-0.5c0.7,0,1.2,0.2,1.7,0.5c0.4,0.3,0.7,0.8,0.7,1.5H16.3z M22.5,1.3H15v1.3    h7.5V1.3z"/>
+												</g>
+												<foreignObject width="27" height="27">
+													<span class="fa">
+														&#xf0c1;
+													</span>
+												</foreignObject>
+											</switch>
+										</svg>
+									</div>
+									<div class="click pull-left clip">
+										Folow us on Behance
+									</div>
+								</a>
+								<a class="pull-right col-lg-3 col-md-3 col-sm-3 col-xs-6 envato clip" href="http://themeforest.net/user/InfoStyle/follow">
+									<div class="social pull-left stretch-both">
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
+											<style type="text/css">
+												<![CDATA[
+													.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+												]]>
+											</style>
+											<switch>
+												<path class="st7" d="M19.9,3c0,0-7.5-0.3-9.8,6.8c-1.7,5.5-1.2,7.4-1.2,7.4s-1.6,0.4-1.8-3.1c-0.3-3.4,0.6-5.6,0.6-5.6  s-3.8,2-3.7,6.2C4.2,19,7,24,13.8,24c6.8,0.1,9.7-7.4,9.2-11.7C22.4,7.9,20.2,3.2,19.9,3z"/>
+												<foreignObject width="27" height="27">
+													<span class="fa">
+														&#xf0c1;
+													</span>
+												</foreignObject>
+											</switch>
+										</svg>
+									</div>
+									<div class="click pull-left">
+										Folow us on Envato
+									</div>
+								</a>
+								<a class="pull-right col-lg-3 col-md-3 col-sm-3 col-xs-6 twitter clip" href="https://twitter.com/Itembridge">
+									<div class="social icon-twitter pull-left">
+									</div>
+									<div class="click pull-left">
+										Folow us on Twitter
+									</div>
+								</a>
+								<a class="pull-right col-lg-3 col-md-3 col-sm-3 col-xs-6 facebook clip" href="https://www.facebook.com/ItemBridge">
+									<div class="social icon-facebook pull-left">
+									</div>
+									<div class="click pull-left">
+										Folow us on Facebook
+									</div>
+								</a>
+							</div>
+							<div class="clear">
+							</div>
+						</div>
+					</div>
+				</section>
+			</article>
+			<article class="theme-white" id="Introduction">
+				<section class="container">
+					<h2>
+						Introduction
+					</h2>
+					<p>
+						<strong>Progressive</strong> is theme, which is created to make impression on you and your customers. We offer you an up-to-date and really high quality work with outstanding design and well-thought usability approach. This template can help you to achieve a significant increase of the conversion rates and number of positive feedback, as well as will simply be a nice surprise for your customers.
+					</p>
+					<p>
+						Please do not forget to rate <strong>«Progressive»</strong> on ThemeForest. This can be done in Downloads area. Just select <strong>«Progressive»</strong> in the Download list and rate it. We really appreciate your feedback and will be grateful for your opinion.
+					</p>
+					<div class="clip">
+						<div class="frame">
+							<div class="row">
+								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+									<img class="img-responsive" src="img/progressive/scrineenshot-1.jpg" alt="" />
+								</div>
+								<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+									<img class="img-responsive" src="img/progressive/scrineenshot-2.jpg" alt="" />
+								</div>
+							</div>
+							<div class="overlay">
+							</div>
+						</div>
+					</div>
+					<p>
+						Besides, we will be happy to meet you in social networks and on websites.
+					</p>
+				</section>
+			</article>
+			<hr class="theme-white" />
+			
+			<article class="theme-white" id="htmlStructure">
+				<section class="container">
+					<h2>
+						HTML Structure
+					</h2>
+					<p>Theme has the following main structural units:</p>
+					<strong>Header</strong><br>
+					<strong>Main Content</strong><br>
+					<strong>Sidebar</strong><br>
+					<strong>Footer</strong><br>
+					<p>Each page can be displayed in the "Boxed" mode. To do this you should add the class "boxed" to the body. You can look at it right <a href="http://template.progressive.itembridge.com/home-3.html" target="_blank">here</a></p>
+<pre class="brush: html;">
+&#60;body class="boxed"&#62;
+	...
+&#60;/body&#62;
+</pre>
+					<br>
+					<h4 id="structure-top-panel">Top Bar</h4>
+					<p>It has the following structure</p>
+<pre class="brush: html;">
+<div id="top-box">
+	<div class="container">
+		...
+	</div>
+</div>
+</pre>
+					<p>Top Bar can be filled in with such content:</p>
+					<ol>
+						<li>
+							Language and currency switchers<br>
+<pre class="brush: html;">
+<div class="btn-group language btn-select">
+	<a class="btn dropdown-toggle btn-default" role="button" data-toggle="dropdown" href="#">
+		<span class="hidden-xs">Language</span><span class="visible-xs">Lang</span><!-- 
+		-->: English
+		<span class="caret"></span>
+	</a>
+	<ul class="dropdown-menu">
+		<li><a href="#"><img src="img/eng-flag.png" alt="">English</a></li>
+		...
+	</ul>
+</div>
+</pre><br>
+						</li>
+						<li>
+							Social Icons<br>
+<pre class="brush: html;">
+<div class="top-social bg-social text-right">
+    <a class="icon-item" href="#"><i class="fa fa-facebook"></i></a>
+    ...
+	<div class="clearfix"></div>
+</div>
+</pre><br>
+						</li>
+						<li>
+							Menu<br>
+<pre class="brush: html;">
+<div class="navbar navbar-inverse top-navbar top-navbar-right" role="navigation">
+	<button type="button" class="navbar-toggle btn-navbar collapsed" data-toggle="collapse" data-target=".top-navbar .navbar-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+
+	<nav class="collapse collapsing navbar-collapse">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="account.html">My Account</a></li>
+		...
+	  </ul>
+	</nav>
+</div>
+</pre><br>
+						</li>
+						<li>
+							Search Form<br>
+<pre class="brush: html;">
+<form name="" class="top-search">
+	<input class="form-control" type="search" placeholder="Search here" name="">
+		
+	<button class="search-submit">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+			<path fill="#fff" d="M12.001,10l-0.5,0.5l-0.79-0.79c0.806-1.021,1.29-2.308,1.29-3.71c0-3.313-2.687-6-6-6C2.687,0,0,2.687,0,6
+			s2.687,6,6,6c1.402,0,2.688-0.484,3.71-1.29l0.79,0.79l-0.5,0.5l4,4l2-2L12.001,10z M6,10c-2.206,0-4-1.794-4-4s1.794-4,4-4
+			s4,1.794,4,4S8.206,10,6,10z"></path>
+			<image src="img/png-icons/search-icon.png" alt="" width="16" height="16" style="vertical-align: top;"></image>
+		</svg>
+	</button>
+</form>
+</pre><br>
+						</li>
+						<li>
+							Text Information</br>
+<pre class="brush: html;">
+<div class="top-info text-right">
+	<i class="fa fa-phone"></i>
+	Call Us: +1 (877) 123-45-67
+	<span class="separator">|</span>
+	<i class="fa fa-envelope-o"></i>
+	Email: <a href="#">manager@example.com</a>
+</div>
+</pre><br>
+						</li>
+					</ol>
+					
+					<h4 id="structure-header">Header</h4>
+					<p>It has the following structure</p>
+					
+<pre class="brush: html;">
+&#60;header class="header"&#62;
+	...
+&#60;/header&#62;
+</pre>
+					<p>Header can have several design options:</p>
+					<ol>
+						<li>
+							<a href="http://template.progressive.itembridge.com/shop-login.html" target="_blank">Shop Header</a><br><br>
+							<div class="clip">
+								<div class="frame">
+									<img class="img-responsive" src="img/progressive/img-1.jpg" alt="">
+									<div class="overlay">
+									</div>
+								</div>
+							</div>
+							<br>
+						<li>
+							<a href="http://template.progressive.itembridge.com/shop.html" target="_blank">Shop Header (fixed)</a>
+							- add a classes 'fixed-header', 'hidden-top' to body<br><br>
+<pre class="brush: html;">
+&#60;body class="fixed-header hidden-top"&#62;
+</pre><br>
+							<div class="clip">
+								<div class="frame">
+									<img class="img-responsive" src="img/progressive/img-2.jpg" alt="">
+									<div class="overlay">
+									</div>
+								</div>
+							</div>
+							<br><br>
+						<li>
+							<a href="http://template.progressive.itembridge.com/bootstrap-typography.html" target="_blank">Promo Header</a><br><br>
+							<div class="clip">
+								<div class="frame">
+									<img class="img-responsive" src="img/progressive/img-3.jpg" alt="">
+									<div class="overlay">
+									</div>
+								</div>
+							</div>
+						<br>
+						<li>
+							<a href="http://template.progressive.itembridge.com/" target="_blank">Promo Header (fixed)</a><br><br>
+							<div class="clip">
+								<div class="frame">
+									<img class="img-responsive" src="img/progressive/img-0.jpg" alt="">
+									<div class="overlay">
+									</div>
+								</div>
+							</div>
+						<br>
+						<li>
+							<a href="http://template.progressive.itembridge.com/elements-promo-panel.html" target="_blank">Promo Header (fixed block)</a>
+							- add block:<br><br>
+<pre class="brush: html;">
+<div class="top-fixed-box">
+  <div class="container">
+	<div class="contact-box pull-left">
+	  <div class="phone pull-left">
+		<i class="fa fa-mobile"></i>
+		Call Us...
+      </div>
+	  
+	  <div class="email pull-left">
+		<i class="fa fa-envelope"></i>
+		Email...
+      </div>
+	</div>
+	
+	<div class="pull-right">
+	  <div class="social">
+		Social Icons
+	  </div>
+	  <a href="#" class="btn btn-primary">Add to cart</a>
+	</div>
+	
+	<div class="clearfix"></div>
+  </div>
+</div>
+</pre>
+							<br>
+							<div class="clip">
+								<div class="frame">
+									<img class="img-responsive" src="img/progressive/img-4.jpg" alt="">
+									<div class="overlay">
+									</div>
+								</div>
+							</div>
+							<br>
+								
+						<li>
+							<a href="http://template.progressive.itembridge.com/header12.html" target="_blank">Header with collapsed menu</a>
+							- add a classes 'minimized-menu' to header<br><br>
+<pre class="brush: html;">
+&#60;header class="header header-two minimized-menu"&#62;
+	...
+&#60;/header&#62;
+</pre>
+							<br>
+							<div class="clip">
+								<div class="frame">
+									<img class="img-responsive" src="img/progressive/img-42.jpg" alt="">
+									<div class="overlay">
+									</div>
+								</div>
+							</div>
+					</ol>
+					
+					<h6>Menu</h6>
+					<p style="padding-top: 0;">Each menu item can have a different text, background color and border color.</p>
+
+					<ol>
+						<li>
+							text color - sets the color. Can take values - text-info, text-success, text-warning, text-error, text-primary
+<pre class="brush: html;">
+<li class="text-danger">
+	<a href="#">Link</a>
+</li>
+</pre>
+							<br>
+							<div class="clip">
+								<div class="frame">
+									<img class="img-responsive" src="img/progressive/img-38.jpg" alt="">
+									<div class="overlay">
+									</div>
+								</div>
+							</div>
+						</li>
+						<br>
+						<li>
+							border-color - sets the border. Can take values - item-info, item-success, item-warning, item-error, item-primary
+<pre class="brush: html;">
+<li class="item-danger">
+	<a href="#">Link</a>
+</li>
+</pre>
+							<br>
+							<div class="clip">
+								<div class="frame">
+									<img class="img-responsive" src="img/progressive/img-40.jpg" alt="">
+									<div class="overlay">
+									</div>
+								</div>
+							</div>
+						</li>
+						<br>
+						<li>
+							background-color - sets the background.<br>
+							<i>Default link</i> - Can take values - item-inverse + item-info, item-inverse + item-success, item-inverse + item-warning, item-inverse + item-error, item-inverse + item-primary<br>
+							<i>Hover link</i> - Can take values - item-bg + item-info, item-bg + item-success, item-bg + item-warning, item-bg + item-error, item-bg + item-primary
+<pre class="brush: html;">
+<li class="item-danger item-inverse">
+	<a href="#">Default Link</a>
+</li>
+<li class="item-danger item-bg">
+	<a href="#">Hover Link</a>
+</li>
+</pre>
+							<br>
+							<div class="clip">
+								<div class="frame">
+									<img class="img-responsive" src="img/progressive/img-39.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</li>
+						<br>
+					</ol>
+					
+					<p>To create a Megamenu you need to add the class "megamenu"</p>
+<pre class="brush: html;">
+<li class="parent megamenu">
+	...
+</li>
+</pre>
+					<p>The structure of a drop-down list has to be like this:</p>
+<pre class="brush: html;">
+<ul class="sub">
+	<li class="promo-block box">
+		<div class="promo-article">
+			<h6 class="title">Title</h6>
+			<img src="image" width="70" height="70" alt="">
+			<p>descriptions</p>
+		</div>
+		...
+	</li>
+				  
+	<li class="box first">
+		<h6 class="title">Title Block</h6>
+		<ul>
+			<li><a href="#">Link</a></li>
+			<li><a href="#">Link</a></li>
+		</ul>
+	</li>
+	<li class="box">
+		<h6 class="title">Title Block</h6>
+		<ul>
+			<li><a href="#">Link</a></li>
+			<li><a href="#">Link</a></li>
+		</ul>
+	</li>
+</ul>
+</pre>
+					<p>The menu may contain a promo block, or be without it. Also Megamenu may have 3, 4 or 5 columns:</p>
+					<p><em>Three</em></p>
+<pre class="brush: html;">
+<li class="parent megamenu">
+	<a href="#">Megamenu</a>
+	<ul class="sub">
+		
+	</ul>
+</li>
+</pre>
+					<p><em>Four</em></p>
+<pre class="brush: html;">
+<li class="parent megamenu four-columns">
+	<a href="#">Megamenu</a>
+	<ul class="sub">
+		
+	</ul>
+</li>
+</pre>
+					<p><em>Five</em></p>
+<pre class="brush: html;">
+<li class="parent megamenu five-columns">
+	<a href="#">Megamenu</a>
+	<ul class="sub">
+		
+	</ul>
+</li>
+</pre>
+					
+					<br>
+					<div class="clip">
+						<div class="frame">
+							<img class="img-responsive" src="img/progressive/img-5.jpg" alt="">
+							<div class="overlay">
+							</div>
+						</div>
+					</div>
+					<br>
+					<h4 id="structure-main">Main Content</h4>
+					<p>The Main Content can have a Sidebar (left or right) or be without it.</p>
+					<p><em>Without sidebar</em></p>
+<pre class="brush: html;">
+<section id="main">
+	<header class="page-header">
+		<div class="container">
+			<h1 class="title">Page Title</h1>
+		</div>	
+	</header>
+  
+	<div class="container">
+		<article class="content">
+			
+		</article>
+	</div>
+</section>
+</pre>
+					<p><em>Left sidebar</em></p>
+
+<pre class="brush: html;">
+<section id="main">
+	<header class="page-header">
+		<div class="container">
+			<h1 class="title">Page Title</h1>
+		</div>	
+	</header>
+  
+	<div class="container">
+		<div class="row">
+			<article class="content pull-right">
+				...
+			</article>
+			
+			<div id="sidebar" class="sidebar span3">
+				...
+			</div>
+		</div>
+	</div>
+</section>
+</pre>
+					<p><em>Right sidebar</em></p>
+<pre class="brush: html;">
+<section id="main">
+	<header class="page-header">
+		<div class="container">
+			<h1 class="title">Page Title</h1>
+		</div>	
+	</header>
+  
+	<div class="container">
+		<div class="row">
+			<article class="content">
+				...
+			</article>
+			
+			<div id="sidebar" class="sidebar span3">
+				...
+			</div>
+		</div>
+	</div>
+</section>
+</pre>
+					<p>In the area of the main content you can insert one or more elements offered by us. All these items can be found at the pages - Elements</p>
+					
+					<div id="e-accordion-toggles">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-accordions.html" target="_blank">Accordions & Toggles</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-6.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="panel-group" id="accordion">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+					Title
+				</a>
+			</div>
+		</div>
+		<div id="collapse1" class="panel-collapse collapse">
+			<div class="panel-body">
+				Content
+			</div>
+		</div>
+	</div>
+</div>
+</pre>
+						<p><em>parameters:</em></p>
+						<ol>
+							<li>
+								panel-bg - <span>sets the gray background</span>
+<pre class="brush: html;">
+<div class="panel panel-default panel-bg">
+	...
+</div>
+</pre>
+							</li>
+							<li>
+								one-open - <span>only one element can be opened</span>
+<pre class="brush: html;">
+<div class="panel-group one-open" id="accordion">
+	<div class="panel panel-default">
+		...
+	</div>
+</div>
+</pre>
+							</li>
+						</ol>
+					</div>
+					
+					<div id="e-animated-content">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-animations.html" target="_blank">Animations</a>
+						</h6>
+						<span>You can add animation to any element you want. To do this you have to add the attribute <code>data-appear-animation</code> with the corresponding value of the type of animation.<br>
+						Types of animation:</span><br>
+						fadeIn<br>
+						fadeInUp<br>
+						fadeInDown<br>
+						fadeInLeft<br>
+						fadeInRight<br>
+						fadeInUpBig<br>
+						fadeInDownBig<br>
+						fadeInLeftBig<br>
+						fadeInRightBig<br>
+						bounceIn<br>
+						bounceInUp<br>
+						bounceInDown<br>
+						bounceInLeft<br>
+						bounceInRight<br>
+						rotateIn<br>
+						rotateInUpLeft<br>
+						rotateInDownLeft<br>
+						rotateInUpRight<br>
+						rotateInDownRight<br>
+						flash<br>
+						shake<br>
+						bounce<br>
+						tada<br>
+						swing<br>
+						wobble<br>
+						wiggle<br>
+						<p>Example:</p>
+<pre class="brush: html;">
+<img src="img/content/animations.png" data-appear-animation="fadeIn">
+</pre>
+					</div>
+
+					<div id="e-social-icons">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-buttons.html" target="_blank">Buttons & Social Icons</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-7.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>All types of buttons and theirs settings can be found <a href="http://getbootstrap.com/css/#buttons" target="_blank">here</a> and <a href="http://msurguy.github.io/ladda-bootstrap/" target="_blank">here</a><br>
+						</p>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<a class="sbtnf icon-duckduckgo" href="#">duckduckgo</a>
+</pre>
+						<p><em>parameters:</em></p>
+						<ol>
+							<li>
+								sbtnf-rounded - rounded button
+<pre class="brush: html;">
+<a class="sbtnf sbtnf-rounded icon-duckduckgo" href="#">duckduckgo</a>
+</pre>
+							</li>
+							<li>
+								sbtnf-circle - circled button
+<pre class="brush: html;">
+<a class="sbtnf sbtnf-circle icon-duckduckgo" href="#">duckduckgo</a>
+</pre>
+							</li>
+							<li>
+								sbtnf-icon-bg-black - icon with black background
+<pre class="brush: html;">
+<a class="sbtnf sbtnf-circle sbtnf-icon-bg-black icon-duckduckgo" href="#">duckduckgo</a>
+</pre>
+							</li>
+							<li>
+								color - the color of the icon
+<pre class="brush: html;">
+<a class="sbtnf sbtnf-circle sbtnf-icon-bg-black color icon-duckduckgo" href="#">duckduckgo</a>
+</pre>
+							</li>
+							<li>
+								color-hover - the color of the icon's hover
+<pre class="brush: html;">
+<a class="sbtnf sbtnf-circle sbtnf-icon-bg-black color-hover icon-duckduckgo" href="#">duckduckgo</a>
+</pre>
+							</li>
+						</ol>
+					</div>
+					
+					
+					<div id="e-carousel-sliders">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-carousel.html" target="_blank">Carousels & Sliders</a>
+						</h6>
+						<p><strong>LayerSlider Responsive jQuery Slider Plugin</strong></p>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-34.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>You can find the detailed information about the configuration of <a href="layer-documentation/documentation.html" target="_blank">this</a></p>
+						
+						<p><strong>Slider Revolution Responsive jQuery Plugin</strong></p>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-22.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>You can find the detailed information about the configuration of <a href="revolution-documentation/documentation.html" target="_blank">this</a></p>
+						<p><strong>RoyalSlider – Touch-Enabled jQuery Image Gallery</strong></p>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-33.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>You can find the detailed information about the configuration of <a href="http://dimsemenov.com/plugins/royal-slider/documentation/" target="_blank">this</a></p>
+						<p><strong>Carousels</strong></p>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-8.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="carousel-box load">
+	<div class="title-box">
+		<a class="next" href="#">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				width="9px" height="16px" viewBox="0 0 9 16" enable-background="new 0 0 9 16" xml:space="preserve">
+				<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#fcfcfc" points="1,0.001 0,1.001 7,8 0,14.999 1,15.999 9,8 "/>
+			</svg>
+		</a>
+		<a class="prev" href="#">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				width="9px" height="16px" viewBox="0 0 9 16" enable-background="new 0 0 9 16" xml:space="preserve">
+				<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#fcfcfc" points="8,15.999 9,14.999 2,8 9,1.001 8,0.001 0,8 "/>
+			</svg>
+		</a>
+		<h2 class="title">Title</h2>
+	</div>
+
+	<div class="carousel">
+	  Carousel Elements
+	</div>
+	
+	<div class="pagination switches"></div>
+</div>
+</pre>
+						<p>Carousel Elements - may be any elements that are listed <a href="http://template.progressive.itembridge.com/elements-carousel.html" target="_blank">here</a></p>
+						
+						<p><em>parameters:</em></p>
+						<ol>
+							<li>
+								data-carousel-pagination - attribute with the value <code>true</code> shows the elements of pagination in the bottom, by default is <code>false</code>
+<pre class="brush: html;">
+<div class="carousel-box load" data-carousel-pagination="true">
+	...
+</div>
+</pre>
+							</li>
+							<li>
+								data-carousel-nav - attribute with the value <code>false</code> hides the elements of navigation Next/Prev, by default is <code>true</code>
+<pre class="brush: html;">
+<div class="carousel-box load" data-carousel-nav="false">
+	...
+</div>
+</pre>
+							</li>
+							<li>
+								data-carousel-autoplay - attribute with the value <code>true</code> adds the autoplay, by default is <code>false</code>
+<pre class="brush: html;">
+<div class="carousel-box load" data-carousel-autoplay="true">
+	...
+</div>
+</pre>
+							</li>
+						</ol>
+						
+					</div>
+					
+					<div id="e-chart">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-charts.html" target="_blank">Charts</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-9.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>To create the charts we use the following plugins <a href="http://omnipotent.net/jquery.sparkline/" target="_blank">jQuery Sparklines</a> and <a href="http://morrisjs.github.io/morris.js" target="_blank">morris.js</a>. Detailed information about its configuration you can find on their sites.</p>
+					</div>
+					
+					<div id="e-tagline-boxes">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-container.html" target="_blank">Container</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-10.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="content-block">
+	Content...
+</div>
+</pre>
+						<p>For stylization of this block you can use <a href="#e-image-frames" class="scroll">these styles</a>.</p>
+						<p>For example:</p>
+<pre class="brush: html;">
+<div class="content-block frame frame-shadow-lifted">
+	Content...
+</div>
+</pre>
+					</div>
+					
+					<div id="e-full-width-section">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-content-band.html" target="_blank">Content Band</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-11.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="full-width-box">
+	Content
+</div>
+</pre>
+						<p>This block can contain any content inside it. Also you can set the image with different efects on the background.</p>
+						<p>You can set the color of the background to this block.</p>
+<pre class="brush: html;">
+<div class="full-width-box">
+	<div class="bg"><div class="overlay"></div></div>
+	Content
+</div>
+</pre>
+						<p>For this block you can set the background image.</p>
+<pre class="brush: html;">
+<div class="full-width-box">
+	<div class="bg bg-image"><div class="overlay"></div></div>
+	Content
+</div>
+</pre>
+						<p>The background image can be fixed.</p>
+<pre class="brush: html;">
+<div class="full-width-box">
+	<div class="bg bg-image fixed"><div class="overlay"></div></div>
+	Content
+</div>
+</pre>
+						<p>For the background image we can use the 'paralax' effect.</p>
+<pre class="brush: html;">
+<div class="full-width-box">
+	<div class="bg bg-image paralax" data-stellar-background-ratio="-0.01"><div class="overlay"></div></div>
+	Content
+</div>
+</pre>
+						<p>For the background image we can set the 'blur' effect.</p>
+<pre class="brush: html;">
+<div class="full-width-box">
+	<div class="bg bg-image blur" data-blur-image="img/content/band-4.jpg" data-blur-amount="2">
+		<div class="overlay"></div>
+	</div>
+	Content
+</div>
+</pre>
+						<p>Background video.</p>
+						<p><i>1) HTML5 Video</i></p>
+<pre class="brush: html;">
+<div class="full-width-box">
+	<div class="bg bg-video">
+		<video autoplay="" muted="" loop="" poster="img/content/video-poster.jpg">
+			<source src="video/video.mp4" type="video/mp4">
+			<source src="video/video.webm" type="video/webm">
+		</video>
+		<div class="overlay"></div>
+	</div>
+	Content
+</div>
+</pre>
+						<p><i>2) Youtube Video</i></p>
+<pre class="brush: html;">
+<div class="full-width-box">
+	<div class="bg bg-video bg-youtube-video" data-youtube-videoId="ZCAnLxRvNNc" data-youtube-poster="img/content/video-poster.jpg">
+		<div class="overlay"></div>
+	</div>
+	Content
+</div>
+</pre>
+					</div>
+					
+					<div id="e-dividers">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-dividers.html" target="_blank">Dividers & Gaps</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-12.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<hr>
+</pre>
+						<p>styles - determines the lines style. Can have such values:</p>
+						<p>no-line - transparent (clear) line</p>
+<pre class="brush: html;">
+<hr class="no-line">
+</pre>
+						<p>shadow - line's style as a shadow</p>
+<pre class="brush: html;">
+<hr class="shadow">
+</pre>
+						<p>dotted - dotted style</p>
+<pre class="brush: html;">
+<hr class="dotted">
+</pre>
+						<p>dashed - dashed style</p>
+<pre class="brush: html;">
+<hr class="dashed">
+</pre>
+						<p>double - doubled style</p>
+<pre class="brush: html;">
+<hr class="double">
+</pre>
+					</div>
+					
+					<div id="e-content-boxes">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-featured-box.html" target="_blank">Featured Box</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-13.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>This block have three main types, which you can see <a href="http://template.progressive.itembridge.com/elements-featured-box.html" target="_blank">here</a>. The icons of this blocks can be configured according to these <a href="#e-font-awesome-icons" class="scroll">parameters</a></p>
+					</div>
+					
+					<div id="e-font-awesome-icons">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-icons.html" target="_blank">Font Awesome Icons</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-14.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="icon">
+	<i class="fa fa-adjust"></i>
+</div>
+</pre>
+						<p>Icons Size - determines the size of icons, can take such values: icon-24, icon-40, icon-60, icon-100</p>
+<pre class="brush: html;">
+<div class="icon icon-24">
+	<i class="fa fa-adjust"></i>
+</div>
+</pre>
+						<p>Icon Background - sets the icon's background. Has several basic colors: bg, bg-muted, bg-text-warning, bg-text-error, bg-text-info, bg-text-success</p>
+<pre class="brush: html;">
+<div class="icon bg-muted">
+	<i class="fa fa-adjust"></i>
+</div>
+</pre>
+						<p>Icon Color - determines the color of the icon. Has several basic colors: muted, text-warning, text-error, text-info, text-success.</p>
+<pre class="brush: html;">
+<div class="icon text-info">
+	<i class="fa fa-adjust"></i>
+</div>
+</pre>
+						<p>Icon Border - determines the color of the border. Has several basic colors: border, border-muted, border-text-warning, border-text-error, border-text-info, border-text-success</p>
+<pre class="brush: html;">
+<div class="icon border-text-info">
+	<i class="fa fa-adjust"></i>
+</div>
+</pre>
+						<p>Icon Form - determines the form of the icon. Can take such values:<br>
+						rounded - icon with rounded corners;<br>
+						circle - round icon</p>
+					</div>
+					
+					<div id="e-image-frames">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-frames.html" target="_blank">Frames</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-15.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>This block can contain any image and any other content.</p>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="frame">
+	Content
+</div>
+</pre>
+						<p>This block can be designed according to the proposed <a href="http://template.progressive.itembridge.com/elements-frames.html" target="_blank">styles</a>.</p>
+						<ul>
+							<li>frame-padding</li>
+							<li>frame-border</li>
+							<li>frame-shadow</li>
+							<li>frame-shadow-lifted</li>
+							<li>frame-shadow-perspective</li>
+							<li>frame-shadow-curved</li>
+							<li>frame-shadow-raised</li>
+							<li>rotated-box</li>
+							<li>rotated-right-box</li>
+						</ul>
+						<p>For example:</p>
+<pre class="brush: html;">
+<div class="frame frame-padding frame-shadow-lifted">
+	Content
+</div>
+</pre>
+					</div>
+					
+					<div id="e-google-maps">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-maps.html" target="_blank">Google Maps</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-16.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="map-box">
+	<div class="map-canvas"></div>
+</div>
+</pre>
+						<p><em>parameters:</em></p>
+						<ol>
+							<li>
+								<i>data-zoom</i> - this attribute sets the scale of the map (by default - '8')
+<pre class="brush: html;">
+<div class="map-canvas" data-zoom="8"></div>
+</pre>
+							</li>
+							<li>
+								<i>data-lat, data-lng</i> - these attributes set the coordinates of the center of the map and the point of the map (by default - '-34' and '150')
+<pre class="brush: html;">
+<div class="map-canvas" data-lat="40.25" data-lng="-70.235"></div>
+</pre>
+							</li>
+							<li>
+								<i>data-type</i> - this attribute sets the type of the map. Can take values - roadmap, satellite, hybrid, terrain (by default - 'roadmap')
+<pre class="brush: html;">
+<div class="map-canvas" data-type="satellite"></div>
+</pre>
+							</li>
+							<li>
+								<i>data-scrollwheel</i> - disables zooming on the map (by default - 'false')
+<pre class="brush: html;">
+<div class="map-canvas" data-scrollwheel="true"></div>
+</pre>
+							</li>
+							<li>
+								<i>data-hue</i> - sets the hue of the feature to match the hue of the color supplied. Note that the saturation and lightness of the feature is conserved, which means that the feature will not match the color supplied exactly. Valid values: An RGB hex string, i.e. '#ff0000'.
+<pre class="brush: html;">
+<div class="map-canvas" data-hue="#000"></div>
+</pre>
+							</li>
+							<li>
+								<i>data-title</i> - marker's title
+<pre class="brush: html;">
+<div class="map-canvas" data-title="Title"></div>
+</pre>
+							</li>
+							<li>
+								<i>data-content</i> - content to display in the InfoWindow
+<pre class="brush: html;">
+<div class="map-canvas" data-content="Content"></div>
+</pre>
+							</li>
+						</ol>
+					</div>
+					
+					<div id="e-livicons">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-livicons.html" target="_blank">LivIcons</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-31.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="livicon" data-n="rocket" data-s="48" data-c="#ff5c00" data-hc="0"></div>
+</pre>
+						<p>You can find the detailed information about the configuration of <a href="livicons-documentation/index.html" target="_blank">this</a></p>
+					</div>
+					
+					<div id="e-media">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-media.html" target="_blank">Media</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-17.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>Modal - <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Bootstrap documentation</a></p>
+						<p>Images - <a href="http://getbootstrap.com/css/#images" target="_blank">Bootstrap documentation</a></p>
+						<p>Video<br>
+						<em>structure:</em></p>
+<pre class="brush: html;">
+<div class="video-box">
+	Video
+</div>
+</pre>
+						<p>Video can be inserted from such resources as YouTube, Vimeo and even HTML5 Video. For the playback of the HTML5 Video we use the plugin <a href="http://www.videojs.com/" target="_blank">Video.js</a></p>
+						<p>YouTube</p>
+<pre class="brush: html;">
+<div class="video-box youtube">
+	<iframe src="..."></iframe>
+</div>
+</pre>
+						<p>Vimeo</p>
+<pre class="brush: html;">
+<div class="video-box vimeo">
+	<iframe src="..." frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+</pre>
+						<p>HTML5 Video</p>
+<pre class="brush: html;">
+<div class="video-box html5">
+	<video class="video-js vjs-default-skin" controls preload="auto" poster="" data-setup="{}">
+		<source src="..." type="video/mp4">
+		<source src="..." type="video/webm">
+	</video>
+</div>
+</pre>
+						<p>Audio</p>
+<pre class="brush: html;">
+<div class="audio-box">
+	<iframe width="100%" height="80" scrolling="no" frameborder="no" src="..."></iframe>
+</div>
+</pre>
+						<p>Audio HTML5</p>
+<pre class="brush: html;">
+<audio controls>
+	<source src="..." type="audio/ogg">
+	<source src="..." type="audio/mpeg">
+</audio>
+</pre>
+						<p>jPlayer as a audio playlist player</p>
+						
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div id="jp_container" class="jp-audio">
+	<div class="jp-type-playlist">
+	  <div id="jquery_jplayer" class="jp-jplayer"></div>
+	  
+	  <div class="jp-gui jp-interface">
+		<ul class="jp-controls">
+		  <li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+		  <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+		  <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+		  <li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+		  <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+		  <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+		  <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+		  <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+		</ul>
+		<div class="jp-progress">
+		  <div class="jp-seek-bar">
+			<div class="jp-play-bar"></div>
+		  </div>
+		</div>
+		<div class="jp-volume-bar">
+		  <div class="jp-volume-bar-value"></div>
+		</div>
+		<div class="jp-time-holder">
+		  <div class="jp-current-time"></div>
+		  <div class="jp-duration"></div>
+		</div>
+		<ul class="jp-toggles">
+		  <li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
+		  <li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+		  <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+		  <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="jp-playlist">
+		<ul>
+		  <li
+			data-title="Californication"
+			data-artist="RHCP"
+			data-files="audio/audio.mp3;audio/audio.ogg">
+		  </li>
+		  <li
+			data-title="Californication"
+			data-artist="RHCP"
+			data-files="audio/audio.mp3;audio/audio.ogg">
+		  </li>
+		  <li
+			data-title="Californication"
+			data-artist="RHCP"
+			data-files="audio/audio.mp3;audio/audio.ogg">
+		  </li>
+		</ul>
+	  </div>
+	  
+	  <div class="jp-no-solution">
+		<span>Update Required</span>
+		To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+	  </div>
+	</div>
+</div>
+</pre>
+						<p><em>parameters:</em></p>
+						<ol>
+							<li>
+								data-title - specifies the name of the song
+<pre class="brush: html;">
+<li	data-title="Title"></li>
+</pre>
+							</li>
+							<li>
+								data-artist - specifies the author of the song
+<pre class="brush: html;">
+<li	data-artist="Artist"></li>
+</pre>
+							</li>
+						<li>
+								data-files - specifies the path to the file. The file can be in 2 formats: mp3 and ogg. E.g.: <code>data-files="audio/audio.mp3;audio/audio.ogg"</code>
+<pre class="brush: html;">
+<li	data-files="file src"></li>
+</pre>
+							</li>
+						</ol>
+					</div>
+
+					<div id="e-alert-messages">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-notification.html" target="_blank">Notification</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-18.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="alert fade in">
+	<i class="fa fa-volume-up alert-icon"></i>
+	<button type="button" class="close" data-dismiss="alert">×</button>
+	Content...
+</div>
+</pre>
+						<p><em>parameters:</em></p>
+						<ol>
+							<li>
+								alert-border - <span>this class sets the border of the informational message</span>
+<pre class="brush: html;">
+<div class="alert alert-border fade in">
+	...
+</div>
+</pre>
+							</li>
+							<li>
+								border color/background color - <span>sets the color of the background/border. Can take values</span> - alert-black, alert-success, alert-error, alert-info
+<pre class="brush: html;">
+<div class="alert alert-info fade in">
+	...
+</div>
+</pre>
+							</li>
+						</ol>
+					</div>
+					
+					<div id="e-person">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-person.html" target="_blank">Person</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-19.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>Elements "Person" can be inserted on the page as one or several elements, also these elements can be inserted into the carousel. All these variants can be seen <a href="http://template.progressive.itembridge.com/elements-person.html" target="_blank">here</a>.</p>
+					</div>
+					
+					<div id="e-post-sliders">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-post-sliders.html" target="_blank">Posts Sliders</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-20.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>For these elements you can use all <a href="#e-carousel-sliders" class="scroll">carousel settings</a></p>
+					</div>
+				
+					<div id="e-pricing-tables">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-pricing.html" target="_blank">Pricing and Data Tables</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-21.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>There are two types of "Pricing" tables:</p>
+						<i>First</i>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="pricing">
+	<div class="title"><a href="#">Title</a></div>
+	<div class="price-box">
+		<div class="icon pull-right circle"><i class="icon-android"></i></div>
+		<div class="starting">Starting at</div>
+		<div class="price">$199<span>/month</span></div>
+	</div>
+	<ul class="options">
+		<li><span><i class="fa fa-check"></i></span>Options</li>
+		<li class="active"><span><i class="fa fa-check"></i></span>Options Active</li>
+	</ul>
+	<div class="bottom-box">
+		<a href="#" class="more">Read more <span class="fa fa-angle-right"></span></a>
+		<div class="rating-box">
+			<div style="width: 60%" class="rating">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="73px" height="12px" viewBox="0 0 73 12" enable-background="new 0 0 73 12" xml:space="preserve">
+					<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#1e1e1e" points="6.5,0 8,5 13,5 9,7.7 10,12 6.5,9.2 3,12 4,7.7 0,5 5,5"></polygon>
+					<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#1e1e1e" points="66.5,0 68,5 73,5 69,7.7 70,12 66.5,9.2 63,12 64,7.7 60,5 65,5 "></polygon>
+					<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#1e1e1e" points="21.5,0 23,5 28,5 24,7.7 25,12 21.5,9.2 18,12 19,7.7 15,5 20,5 "></polygon>
+					<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#1e1e1e" points="51.5,0 53,5 58,5 54,7.7 55,12 51.5,9.2 48,12 49,7.7 45,5 50,5 "></polygon>
+					<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#1e1e1e" points="36.5,0 38,5 43,5 39,7.7 40,12 36.5,9.2 33,12 34,7.7 30,5 35,5 "></polygon>
+				</svg>
+			</div>
+		</div>	
+		<div class="clearfix"></div>
+		<button class="btn btn-default btn-lg">Buy Now</button>
+	</div>
+</div>
+</pre>
+						<p>This block can change the color gamma and the <a href="#e-font-awesome-icons" class="scroll">style of icons</a></p>
+						<i>Second</i>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="package">
+	<div class="title"><a href="#">Title</a></div>
+	<div class="price-box">
+		<div class="icon bg-white rounded pull-right"><i class="fa fa-gift"></i></div>
+		<div class="description">
+			Description...
+		</div>	
+		<div class="starting">Starting at</div>
+		<div class="price">$199<span>/month</span></div>
+	</div>
+	<div class="bottom-box">
+	  <a href="#" class="more">Read more <span class="fa fa-angle-right"></span></a>
+	  <div class="rating-box">
+		<div style="width: 60%" class="rating">
+		  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="73px" height="12px" viewBox="0 0 73 12" enable-background="new 0 0 73 12" xml:space="preserve">
+			  <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#1e1e1e" points="6.5,0 8,5 13,5 9,7.7 10,12 6.5,9.2 3,12 4,7.7 0,5 5,5"></polygon>
+			  <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#1e1e1e" points="66.5,0 68,5 73,5 69,7.7 70,12 66.5,9.2 63,12 64,7.7 60,5 65,5 "></polygon>
+			  <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#1e1e1e" points="21.5,0 23,5 28,5 24,7.7 25,12 21.5,9.2 18,12 19,7.7 15,5 20,5 "></polygon>
+			  <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#1e1e1e" points="51.5,0 53,5 58,5 54,7.7 55,12 51.5,9.2 48,12 49,7.7 45,5 50,5 "></polygon>
+			  <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#1e1e1e" points="36.5,0 38,5 43,5 39,7.7 40,12 36.5,9.2 33,12 34,7.7 30,5 35,5 "></polygon>
+		  </svg>
+		</div>
+	  </div>
+	</div>
+</div>
+</pre>
+						<p>In this block you can change the style of <a href="#e-font-awesome-icons" class="scroll">icon</a></p>
+					</div>
+
+					<div id="e-progress-bar">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-progress-bar.html" target="_blank">Progress Bars</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-23.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<br>
+						<strong>Gorizontal Progress Bar</strong>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="progress">
+	<div class="progress-bar" style="width: 80%;">Content</div>
+</div>
+</pre>
+						<p><em>parameters:</em></p>
+						<ol>
+							<li>
+								background color - <span>sets the color of the background. Can take values</span> - progress-info, progress-success, progress-warning, progress-danger
+<pre class="brush: html;">
+<div class="progress">
+	<div class="progress-bar progress-bar-success" style="width: 80%;">Content</div>
+</div>
+</pre>
+							</li>
+							<li>
+								striped - uses a gradient to create a striped effect.
+<pre class="brush: html;">
+<div class="progress progress-striped">
+	<div class="progress-bar" style="width: 80%;">Content</div>
+</div>
+</pre>
+							</li>
+							<li>
+								animated striped - add <code>.active</code> to <code>.progress-striped</code> to animate the stripes right to left
+<pre class="brush: html;">
+<div class="progress progress-striped active">
+	<div class="progress-bar" style="width: 80%;">Content</div>
+</div>
+</pre>
+							</li>
+							<li>
+								hovered striped - <span>sets the color of the hover for striped progress bar</span>
+<pre class="brush: html;">
+<div class="progress progress-striped active hover">
+	<div class="progress-bar" style="width: 80%;">Content</div>
+</div>
+</pre>
+							</li>
+							<li>
+								border radius - <span>sets the border radius</span>
+<pre class="brush: html;">
+<div class="progress border-radius">
+	<div class="progress-bar" style="width: 80%;">Content</div>
+</div>
+</pre>
+							</li>
+							<li>
+								animated - <span>sets the animation by adding the attribute <code>data-appear-progress-animation</code></span>
+<pre class="brush: html;">
+<div class="progress" data-appear-progress-animation="80%">
+	<div class="progress-bar">Content</div>
+</div>
+</pre>
+								
+							</li>
+						</ol>
+						<br>
+						<strong>Circular Progress Bar</strong>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="progress-circular">
+	<input type="text" class="knob" value="0" rel="80" data-linecap="round" data-bgColor="#f2f2f2" data-fgColor="#555555" data-thickness=.15 data-readOnly=true>
+</div>
+</pre>
+						<span>Detailed information on configuring this item you can find here</span> - <a href="http://anthonyterrien.com/knob/" target="_blank">jQuery Knob</a>
+					</div>
+					
+					<div id="e-recent-posts">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-recent-posts.html" target="_blank">Recent Posts</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-24.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>This element has two design options, with and without thumbnail. Their appearance can be viewed <a href="http://template.progressive.itembridge.com/elements-recent-posts.html" target="_blank">here</a></p>
+					</div>
+					
+					<div id="e-shop-elements">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-shop.html" target="_blank">Shop Elements</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-25.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="col-sm-3 col-md-3 product product-danger rotation">
+	<div class="default">
+		<a href="" class="product-image">
+			<img ...>
+		</a>
+		<div class="product-description">
+			<div class="vertical">
+				<h3 class="product-name">
+					<a href="">Title</a>
+				</h3>
+				<div class="price">Price</div>	
+			</div>
+		</div>
+	</div>
+	<div class="product-hover">
+		<h3 class="product-name">
+			<a href="product-view.html">Title</a>
+		</h3>
+		<div class="price">Price</div>
+		<a href="" class="product-image">
+			<img ...>
+		</a>
+		<ul>
+			<li>...</li>
+			...
+		</ul>
+		<div class="actions">
+			Buttons
+		</div>
+	</div>
+</div>
+</pre>
+						<p><em>parameters:</em></p>
+						<ol>
+							<li>
+								color - can take values: product-danger, product-success, product-info, product-warning
+<pre class="brush: html;">
+<div class="product product-danger rotation">
+	<div class="default">
+		<a href="" class="product-image">
+			<img ...>
+		</a>
+		<div class="product-description">
+			<div class="vertical">
+				<h3 class="product-name">
+					<a href="">Title</a>
+				</h3>
+				<div class="price">Price</div>	
+			</div>
+		</div>
+	</div>
+	<div class="product-hover">
+		<h3 class="product-name">
+			<a href="product-view.html">Title</a>
+		</h3>
+		<div class="price">Price</div>
+		<a href="" class="product-image">
+			<img ...>
+		</a>
+		<ul>
+			<li>...</li>
+			...
+		</ul>
+		<div class="actions">
+			Buttons
+		</div>
+	</div>
+</div>
+</pre>
+							</li>
+							<li>
+								rotation - you can disable flip effect for product by
+<pre class="brush: html;">
+<div class="product">
+	<div class="default">
+		<a href="" class="product-image">
+			<img ...>
+		</a>
+		<div class="actions not-rotation-actions">
+			Buttons
+		</div>
+		<div class="product-description">
+			<div class="vertical">
+				<h3 class="product-name">
+					<a href="">Title</a>
+				</h3>
+				<div class="price">Price</div>	
+			</div>
+		</div>
+	</div>
+</div>
+</pre>
+							</li>
+							<li>
+								limit offer - you can add timer for products with limited offer
+<pre class="brush: html;">
+<div class="product product-danger rotation">
+	<div class="default">
+		<a href="" class="product-image">
+			<img ...>
+		</a>
+		<div class="product-description">
+			<div class="limit-offer" data-end="your date(ex: 2014/12/29)">
+				<div class="title">This limited offer ends in:</div>
+			</div>
+			<div class="vertical">
+				<h3 class="product-name">
+					<a href="">Title</a>
+				</h3>
+				<div class="price">Price</div>	
+			</div>
+		</div>
+	</div>
+	<div class="product-hover">
+		<h3 class="product-name">
+			<a href="product-view.html">Title</a>
+		</h3>
+		<div class="price">Price</div>
+		<a href="" class="product-image">
+			<img ...>
+		</a>
+		<ul>
+			<li>...</li>
+			...
+		</ul>
+		<div class="actions">
+			Buttons
+		</div>
+	</div>
+</div>
+</pre>
+							</li>
+						</ol>
+					</div>
+					
+					<div id="e-sequence">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-sequence.html" target="_blank">Sequence</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-32.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="steps">
+	<div class="step">
+		<div class="step-wrapper">
+			Content...
+		</div>
+	</div>
+</div>
+</pre>
+						<p><em>parameters:</em></p>
+						<ol>
+							<li>
+								border color - sets the border. Can take values - border-info, border-success, border-warning, border-error
+<pre class="brush: html;">
+<div class="steps">
+	<div class="step border-warning">
+		<div class="step-wrapper">
+			Content...
+		</div>
+	</div>
+</div>
+</pre>
+							</li>
+							<li>
+								background color - sets the color of the background. Can take values - bg-info, bg-success, bg-warning, bg-error
+<pre class="brush: html;">
+<div class="steps">
+	<div class="step bg-warning">
+		<div class="step-wrapper">
+			Content...
+		</div>
+	</div>
+</div>
+</pre>
+							</li>
+							<li>
+								background image - sets the image of the background
+<pre class="brush: html;">
+<div class="steps">
+	<div class="step bg-warning border-info">
+		<div id="bg-steps-apart1" class="bg-image"></div>
+		<div class="step-wrapper">
+			Content...
+		</div>
+	</div>
+</div>
+</pre>
+							</li>
+							<li>
+								with spacing
+<pre class="brush: html;">
+<div class="row steps steps-apart">
+	<div class="col-sm-4 col-md-4">
+		<div class="step border-info bg-info">
+			<div class="step-wrapper">
+				Content...
+			</div>
+		</div>
+	</div>
+</div>
+</pre>
+							</li>
+							<li>
+								numbered
+<pre class="brush: html;">
+<div class="steps progress-steps">
+	<div class="step border-warning">
+		<div class="step-wrapper">
+			<div class="number">1</div>
+			Content...
+		</div>
+	</div>
+</div>
+</pre>
+							</li>
+						</ol>
+					</div>
+					
+					<div id="e-social-feed">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-social-feed.html" target="_blank">Social Feed</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-35.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="social-feed">
+	<article class="col-xs-12 col-sm-6 col-md-4 isotope-item item-clone">
+		<div class="post">
+			<div class="author-info">
+				<div class="avatar">
+					<img width="50" height="50" src="...">
+				</div>
+				<div class="author-details">
+					<div class="user-name">
+						<a href="#">User Name</a>
+					</div>
+				  <time datetime="2014-06-23">2 days ago</time>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		  
+			<p class="content">
+				Content...
+			</p>
+		  
+			<div class="buttons">
+				<button type="button" class="btn btn-xs"><i class="fa fa-thumbs-o-up"></i></button>
+				<button type="button" class="btn btn-xs"><i class="fa fa-share"></i></button>
+			</div>
+		  
+			<div class="comments">
+				<div class="form">
+					<textarea class="form-control" placeholder="Add a comment..."></textarea>
+				</div>
+			</div>
+		</div>
+	</article>
+</div>
+</pre>
+						<p><em>parameters:</em></p>
+						<ol>
+							<li>
+								bg - sets the background. Can take values - bg-info, bg-success, bg-warning, bg-error, bg-primary
+<pre class="brush: html;">
+<article class="col-xs-12 col-sm-6 col-md-4 isotope-item item-clone">
+	<div class="post bg bg-primary">
+		Content...
+	</div>
+</article>
+</pre>
+							</li>
+						</ol>
+					</div>
+					
+					<div id="e-tabs">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-tabs.html" target="_blank">Tabs</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-26.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>Detailed information about configuration of the tabs you can find in the documentation of <a href="http://getbootstrap.com/javascript/#tabs" target="_blank">Bootstrap</a>.</p>
+					</div>
+					
+					<div id="e-testimonials">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-testimonials.html" target="_blank">Testimonials</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-27.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="respond respond-blockquote">
+	<div class="description">
+		<blockquote>
+			Content...
+		</blockquote>
+	</div>
+	<div class="name">
+		<div class="icon">
+			<img class="img-circle" src="..." alt="">
+		</div>
+		
+		<strong>Name</strong>
+		<div>Post</div>
+	</div>
+</div>
+</pre>
+						<p><em>parameters:</em></p>
+						<ol>
+							<li>
+								bg - sets the background
+<pre class="brush: html;">
+<div class="respond respond-blockquote bg">
+	<div class="description bg-info">
+		...
+	</div>
+	...
+</div>
+</pre>
+							</li>
+							<li>
+								border - sets the border
+<pre class="brush: html;">
+<div class="respond respond-blockquote border">
+	<div class="description border-info">
+		...
+	</div>
+	...
+</div>
+</pre>
+							</li>
+						</ol>
+						<p>These elements can be inserted into the content as one item or several, also you can create a carousel with these elements. The settings of the carousel are located <a href="#e-carousel-sliders" class="scroll">here</a></p>
+					</div>
+					
+					<div id="e-text-rotation">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-text-rotation.html" target="_blank">Text Rotation</a>
+						</h6>
+						
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-36.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<span class="word-rotate">
+	<span class="words-box">
+		<span>first</span>
+		<span>second</span>
+		<span>third</span>
+	</span>
+</span>
+</pre>
+						<p><em>parameters:</em></p>
+						<ol>
+							<li>
+								bg - sets the background. Can take values - bg-info, bg-success, bg-warning, bg-error, bg-primary, bg-muted
+<pre class="brush: html;">
+<span class="word-rotate bg-info">
+	...
+</span>
+</pre>
+							</li>
+							<li>
+								border - sets the border. Can take values - border, border-info, border-success, border-warning, border-error, border-primary, border-muted
+<pre class="brush: html;">
+<span class="word-rotate border border-error">
+	...
+</span>
+</pre>
+							</li>
+						</ol>
+					</div>
+					
+					<div id="e-timeline">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-time-line.html" target="_blank">Timeline</a>
+						</h6>
+						
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-37.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						
+						<p><em>structure:</em></p>
+<pre class="brush: html;">
+<div class="timeline">
+	<article class="post">
+		<div class="timeline-time">
+			<time datetime="2014-06-23">June 23, 2014</time>
+		</div>
+		
+		<div class="timeline-icon">
+			<div class="livicon" data-n="calendar" data-c="#fff" data-hc="0" data-s="22"></div>
+		</div>
+		
+		<div class="timeline-content" data-appear-animation="fadeInRight">
+			<h2 class="entry-title">
+				<a href="blog-view.html">Title</a>
+			</h2>
+			  
+			<div class="entry-content">
+				<p><img class="img-rounded" src="..." width="523" height="183" alt=""></p>
+				<p>Content...</p>
+			</div>
+		</div>
+	</article>
+	
+	...
+</div>
+</pre>
+						<p><em>parameters:</em></p>
+						<ol>
+							<li>
+								bg - sets the background. Can take values - bg-info, bg-success, bg-warning, bg-error, bg-primary
+<pre class="brush: html;">
+<article class="post">
+	...
+	
+	<div class="timeline-icon bg-danger">
+		...
+	</div>
+		  
+	<div class="timeline-content bg bg-danger" data-appear-animation="fadeInRight">
+		...
+	</div>
+</article>
+</pre>
+							</li>
+							<li>
+								border - sets the border. Can take values - border, border-info, border-success, border-warning, border-error, border-primary
+<pre class="brush: html;">
+<article class="post">
+	...
+	
+	<div class="timeline-icon bg-primary">
+		...
+	</div>
+		  
+	<div class="timeline-content border border-danger" data-appear-animation="fadeInRight">
+		...
+	</div>
+</article>
+</pre>
+							</li>
+						</ol>
+					</div>
+					
+					<div id="e-recent-work">
+						<h6>
+							<a href="http://template.progressive.itembridge.com/elements-works.html" target="_blank">Works</a>
+						</h6>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-28.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>On each page you can insert one or more elements. Also these elements can be inserted into the carousel. There is an opportunity to create a filter of any option. The filter is implemented with <a href="http://isotope.metafizzy.co/" target="_blank">Isotope</a></p>
+					</div>
+
+					<br><br>
+					<h4 id="structure-sidebar">Sidebar</h4>
+					<div class="clip">
+						<div class="frame">
+							<img class="img-responsive" src="img/progressive/img-30.jpg" alt="">
+							<div class="overlay">
+							</div>
+						</div>
+					</div>
+					<p>It has the following structure</p>
+<pre class="brush: html;">
+&#60;div id="sidebar" class="sidebar span3"&#62;
+	&#60;aside class="menu"&#62;
+		<header>
+			<h3>Title</h3>
+		</header>
+		<div>
+			Content
+		</div>
+	&#60;/aside&#62;
+&#60;/div&#62;
+</pre>
+					<p>In the sidebar you can insert any <a target="_blank" href="http://template.progressive.itembridge.com/sidebar-blocks.html">block</a> that we proposed</p>
+					
+					<br><br>
+					<div id="structure-footer">
+						<h4>Footer</h4>
+					
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-29.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>It has the following structure</p>
+<pre class="brush: html;">
+<footer id="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row sidebar">
+				&#60;aside class="col-xs-12 col-sm-6 col-md-3 widget"&#62;
+					Widget content
+				&#60;/aside&#62;
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				Content...
+			</div>
+		</div>
+	</div>
+</footer>
+</pre>
+						<p>Any widget block from this <a href="http://template.progressive.itembridge.com/sidebar-blocks.html" target="_blank">list</a> can be placed in the footer<br>
+					</div>
+					
+					<div id="one-page">
+						<h4>One Page Site</h4>
+						<div class="clip">
+							<div class="frame">
+								<img class="img-responsive" src="img/progressive/img-41.jpg" alt="">
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						<p>It has the following structure</p>
+<pre class="brush: html;">
+<header class="header">
+	<div class="primary">
+		<ul class="nav navbar-nav">
+			<li>
+				<a class="scroll" href="#section-id">Section</a>
+			</li>
+		</ul>
+	</div>
+</header>
+
+<div id="main">
+	<section id="section-id" class="full-width-box">
+		Content
+	</section>
+</div>
+</pre>
+					</div>
+				</section>
+			</article>
+			
+			<hr class="theme-white" />
+			
+			<article class="theme-white" id="customizer">
+				<section class="container">
+					<h2>
+						Color Customizer
+					</h2>
+					<p>To change the main color you have to insert into the 'head' the next code, where '#f89406' and 'rgba(248,148,6, opacity)' is the custom color and you can change it into what you like.</p>
+<pre class="brush: html;">
+<style>
+#top-box,
+.carousel-box .next:hover,
+.carousel-box .prev:hover,
+.product .product-hover,
+#footer .up:hover,
+.btn,
+.btn:visited,
+.slider .slider-nav,
+.active .accordion-heading .accordion-toggle,
+.banner-set .pagination a:hover,
+.employee .employee-hover,
+.carousel-box .pagination a:hover,
+.sidebar .menu li.active > a,
+.pagination ul > li > a:hover,
+.sidebar .tags a:hover,
+.sidebar .banners .banner-text,
+#catalog .category-img .description,
+.county-days-wrapper,
+.county-hours-wrapper,
+.county-minutes-wrapper,
+.county-seconds-wrapper,
+.product-bottom .related-products header:before,
+#slider.rs-slider .tparrows:hover,
+.toolbar .sort-catalog .dropdown-toggle,
+.toolbar .grid-list .grid,
+.toolbar .grid-list .list,
+.toolbar .up-down,
+.toolbar .up-down.active,
+.toolbar .grid-list a.grid:hover,
+.toolbar .grid-list a.list:hover,
+.pagination ul > .active > a,
+.pagination ul > .active > span,
+.sidebar .tags a,
+.sidebar .menu li.parent > a .open-sub:before,
+.sidebar .menu li.parent > a .open-sub:after,
+.accordion-heading .accordion-toggle:before,
+.accordion-heading .accordion-toggle:after,
+.new-radio.checked span,
+.list .product .actions a:hover,
+.product-page .span7 .actions a:hover,
+.product-page .image-box .thumblist-box .prev:hover,
+.product-page .image-box .thumblist-box .next:hover,
+.btn.btn-inverse:hover,
+.btn.btn-inverse:focus,
+.btn.btn-inverse:active,
+.btn.btn-inverse.active,
+.btn.btn-inverse.disabled,
+.btn.btn-inverse[disabled],
+.accordion-tab > li > a .open-sub:before,
+.accordion-tab > li > a .open-sub:after,
+.products-tab .accordion-tab > li > a .open-sub:before,
+.products-tab .accordion-tab > li > a .open-sub:after {
+	background-color: #f89406;
+}
+.slider .slider-nav {
+	background-color: rgba(248,148,6,.97);
+}
+.county-days-wrapper,
+.county-hours-wrapper,
+.county-minutes-wrapper,
+.county-seconds-wrappe,
+.product .product-hover,
+.rotation .employee-hover {
+	background-color: rgba(248,148,6,.9);
+}
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+	background-color: #f89406;
+	background-color: rgba(248,148,6,.8);
+}
+#catalog .category-img .description,
+.toolbar .sort-catalog .dropdown-toggle,
+.toolbar .grid-list .grid,
+.toolbar .grid-list .list,
+.toolbar .up-down,
+.toolbar .up-down.active,
+.pagination ul > .active > a,
+.pagination ul > .active > span,
+.sidebar .tags a {
+	background-color: rgba(248,148,6,.7);
+}
+.sidebar .banners .banner-text {
+	background-color: rgba(248,148,6,.65);
+}
+#slider.rs-slider .tparrows,
+.product-page .add-cart-form .number .regulator a:hover {
+	background-color: rgba(248,148,6,.5);
+}
+.pricing .bottom-box {
+	background-color: rgba(248,148,6,.05);
+}
+.pricing {
+	background-color: rgba(248,148,6,.06);
+}
+.pricing .options li,
+.pricing .bottom-box {
+	border-color: rgba(248,148,6,.1);
+}
+.header .cart-header .dropdown-toggle,
+#footer .newsletter input:focus + .submit,
+.icon,
+.big-icon,
+.big-icon:visited,
+.service .icon,
+.close:hover,
+.close:focus,
+.img-thumbnail:hover .bg-images i:before,
+.box-404 h1,
+.gallery-images:hover .bg-images i:before,
+.features-block .header-box .icon-box,
+.features-block .header-box,
+.sidebar .newsletter input:focus + .submit,
+.sidebar .section .selected .close:hover,
+.package .title a,
+.package .price-box .price,
+.package .price-box .icon,
+.pricing .title a,
+.pricing .options li span,
+.pricing .options li.active {
+	color: #f89406;
+}
+.pricing .bottom-box .more {
+	color: rgba(248,148,6,.7);
+}
+.pricing .options li {
+	color: rgba(248,148,6,.4);
+}
+.phone-header a svg path,
+.search-header a svg path,
+.product .actions a svg path,
+.product-remove:hover path,
+.sidebar .wishlist .add-cart:hover path,
+.header .cart-header .dropdown-toggle .icon svg path,
+.search-active .search-submit svg path, .search-result .search-submit svg path,
+.new-checkbox svg polygon,
+.product-bottom .related-products li .button-box .wishlist:hover svg path,
+.jslider .jslider-pointer svg path,
+.rating-box .rating svg polygon {
+	fill: #f89406;
+}
+@media (max-width: 979px) {
+  .header .primary .navbar .nav > .parent.active > a,
+  .header .primary .navbar .nav > .parent.active:hover > a,
+  .header .primary .navbar .nav .open-sub span,
+  .header .primary .navbar .btn-navbar .icon-bar,
+  .header.header-two .primary .navbar .btn-navbar.collapsed .icon-bar,
+  .accordion-tab > .active > a,
+  .accordion-tab > .active:hover > a,
+  .products-tab .accordion-tab > .active > a,
+  .products-tab .accordion-tab > .active:hover > a {
+		background-color: #f89406;
+  }
+}
+.carousel-box .pagination a.selected,
+.banner-set .pagination a.selected {
+	background: #ccc;
+	background: rgba(0,0,0,.3);
+}
+.navbar-inverse .brand,
+.navbar-inverse .nav > li > a,
+.btn-group.btn-select .dropdown-toggle,
+.product .product-hover,
+.employee .employee-hover,
+.slider .slid-content{
+	color: #fff;
+}
+.product .product-hover ul li {
+	background-image: url("img/svg/check-icon-white.svg"), none;
+}
+</style>
+</pre>
+				</section>
+			</article>
+			
+			<hr class="theme-white" />
+			
+			<article class="theme-white" id="retina">
+				<section class="container">
+					<h2>
+						Retina Ready
+					</h2>
+					<p>In order to create an image for retina displays, you must add class "replace-2x" for the image and create the image with the name "name@2x". The image must be in the same folder as the original one, and at least with twice bigger dimension as the origin.</p>
+					<p>Default Image</p>
+<pre class="brush: html;">
+<img src="img/content/image.jpg" width="127" height="79" alt="">
+</pre>
+					<p>Retina Ready Image</p>
+<pre class="brush: html;">
+<img src="img/content/image.jpg" class="replace-2x" width="127" height="79" alt="">
+</pre>
+				</sectio>
+			</article>
+			
+			<hr class="theme-white" />
+			
+			<article class="theme-white" id="cssFiles">
+				<section class="container">
+					<h2>
+						CSS Files and Structure
+					</h2>
+					<p>I'm using several CSS files in this theme:</p>
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover align-left">
+							<tbody>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Location</th>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://daneden.github.io/animate.css/" target="_blank">Animate.css</a>
+									</td>
+									<td>
+										Just-add-water CSS animations
+									</td>
+									<td>
+										css/animate.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://dimsemenov.com/plugins/royal-slider/" target="_blank">RoyalSlider</a>
+									</td>
+									<td>
+										Styles for RoyalSlider
+									</td>
+									<td>
+										css/royalslider/...
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://kreaturamedia.com/layerslider-responsive-jquery-slider-plugin/" target="_blank">LayerSlider</a>
+									</td>
+									<td>
+										Styles for LayerSlider
+									</td>
+									<td>
+										css/layerslider/...
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Social Icons
+									</td>
+									<td>
+										Styles for social icons
+									</td>
+									<td>
+										css/buttons/...
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>
+									</td>
+									<td>
+										Styles for Font Awesome
+									</td>
+									<td>
+										css/font-awesome.min.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+									</td>
+									<td>
+										Defines main Bootstrap classes
+									</td>
+									<td>
+										css/bootstrap.min.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://fancyapps.com/fancybox/" target="_blank">fancyBox</a>
+									</td>
+									<td>
+										Styles for fancyBox
+									</td>
+									<td>
+										css/jquery.fancybox.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://egorkhmelev.github.io/jslider/" target="_blank">jQuery Slider plugin</a>
+									</td>
+									<td>
+										Styles for jQuery Slider plugin
+									</td>
+									<td>
+										css/jslider.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://morrisjs.github.io/morris.js/" target="_blank">morris.js</a>
+									</td>
+									<td>
+										Styles for Charts(morris.js)
+									</td>
+									<td>
+										css/morris.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://themepunch.com/revolution/" target="_blank">Revolution Slider</a>
+									</td>
+									<td>
+										Styles for Revolution Slider
+									</td>
+									<td>
+										css/settings.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://www.videojs.com/" target="_blank">video.js</a>
+									</td>
+									<td>
+										Styles for HTML5 video player
+									</td>
+									<td>
+										css/video-js.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://lab.hakim.se/ladda/" target="_blank">Ladda</a>
+									</td>
+									<td>
+										Styles for Ladda UI
+									</td>
+									<td>
+										css/ladda.min.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://jplayer.org/" target="_blank">jPlayer</a>
+									</td>
+									<td>
+										Styles for jQuery HTML5 Audio / Video player
+									</td>
+									<td>
+										css/jplayer/...
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://www.eyecon.ro/bootstrap-datepicker/?utm_source=twitterfeed&utm_medium=twitter" target="_blank">Datepicker for Bootstrap</a>
+									</td>
+									<td>
+										Styles for Datepicker for Bootstrap
+									</td>
+									<td>
+										css/datepicker.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										IE styles
+									</td>
+									<td>
+										Contains all of the IE stylings for the theme
+									</td>
+									<td>
+										css/ie/...
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Responsive styles
+									</td>
+									<td>
+										Contains all of the responsive stylings for the theme
+									</td>
+									<td>
+										css/responsive.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Theme styles
+									</td>
+									<td>
+										Contains all of the specific stylings for the theme.
+									</td>
+									<td>
+										css/style.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Customizer styles
+									</td>
+									<td>
+										Styles for theme customization
+									</td>
+									<td>
+										css/customizer/...
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+			</article>
+			<hr class="theme-white" />
+			
+			<article class="theme-white" id="javascript">
+				<section class="container">
+					<h2>
+						JavaScript
+					</h2>
+					<p>This theme imports three Javascript files.</p>
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover align-left">
+							<tbody>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Location</th>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" target="_blank">jQuery</a>
+									</td>
+									<td>
+										Core Javascript library
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+									</td>
+									<td>
+										Sleek, intuitive, and powerful front-end framework for faster and easier web development
+									</td>
+									<td>
+										js/bootstrap.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://caroufredsel.dev7studios.com/" target="_blank">CarouFredSel</a>
+									</td>
+									<td>
+										jQuery.carouFredSel is a plugin that turns any kind of HTML element into a carousel.
+									</td>
+									<td>
+										js/jquery.carouFredSel-6.2.1-packed.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="https://github.com/mattbryson/TouchSwipe-Jquery-Plugin" target="_blank">TouchSwipe</a>
+									</td>
+									<td>
+										A jquery plugin to be used on touch devices such as iPad, iPhone, android etc
+									</td>
+									<td>
+										js/jquery.touchSwipe.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://fancyapps.com/fancybox/" target="_blank">FancyBox</a>
+									</td>
+									<td>
+										fancyBox is a tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on your webpages.
+									</td>
+									<td>
+										js/jquery.fancybox.pack.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="https://www.versioneye.com/javascript/marcj:jquery-selectbox/1.2.0" target="_blank">Selectbox</a>
+									</td>
+									<td>
+										A styleable replacement for SELECT elements.
+									</td>
+									<td>
+										js/jquery.selectBox.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://www.pixastic.com/lib/" target="_blank">Blur</a>
+									</td>
+									<td>
+										Pixastic Image Processing Library
+									</td>
+									<td>
+										js/pixastic.custom.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="https://github.com/bas2k/jquery.appear/" target="_blank">jQuery Appear</a>
+									</td>
+									<td>
+										jQuery plugin to call a function when an element appears
+									</td>
+									<td>
+										js/jquery.appear.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery Easing</a>
+									</td>
+									<td>
+										A jQuery plugin from GSGD to give advanced easing options.
+									</td>
+									<td>
+										js/jquery.easing.1.3.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="https://github.com/rendro/easy-pie-chart/" target="_blank">Easy Pie Chart</a>
+									</td>
+									<td>
+										Easy pie chart is a jquery plugin to display simple animated pie charts for only one value
+									</td>
+									<td>
+										js/jquery.easypiechart.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://www.elevateweb.co.uk/image-zoom" target="_blank">jQuery ElevateZoom</a>
+									</td>
+									<td>
+										A Jquery Image Zoom Plugin
+									</td>
+									<td>
+										js/jquery.elevateZoom-3.0.8.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://imagesloaded.desandro.com/" target="_blank">Images Loaded</a>
+									</td>
+									<td>
+										Detect when images have been loaded.
+									</td>
+									<td>
+										js/jquery.imagesloaded.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://isotope.metafizzy.co/" target="_blank">Isotope</a>
+									</td>
+									<td>
+										An exquisite jQuery plugin for magical layouts
+									</td>
+									<td>
+										js/isotope.pkgd.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://anthonyterrien.com/knob/" target="_blank">jQuery Knob</a>
+									</td>
+									<td>
+										Nice, downward compatible, touchable, jQuery dial.
+									</td>
+									<td>
+										js/jquery.knob.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://omnipotent.net/jquery.sparkline/" target="_blank">jQuery Sparkline</a>
+									</td>
+									<td>
+										This jQuery plugin generates sparklines (small inline charts) directly in the browser using data supplied either inline in the HTML, or via javascript.
+									</td>
+									<td>
+										js/jquery.sparkline.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://markdalgleish.com/projects/stellar.js/" target="_blank">Stellar</a>
+									</td>
+									<td>
+										Stellar is a jQuery plugin that provides parallax scrolling effects to any scrolling element.
+									</td>
+									<td>
+										js/jquery.stellar.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://www.themepunch.com/codecanyon/revolution/" target="_blank">Revolution Slider</a>
+									</td>
+									<td>
+										This plugin features tons of unique transition effects, an image preloader, video embedding, autoplay that stops on user interaction and lots of easy to set options to create your own effects.
+									</td>
+									<td>
+										js/revolution/...
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://dimsemenov.com/plugins/royal-slider/" target="_blank">Royal Slider</a>
+									</td>
+									<td>
+										RoyalSlider is a powerful image gallery and content slider plugin.
+									</td>
+									<td>
+										js/jquery.royalslider.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://kreaturamedia.com/layerslider-responsive-jquery-slider-plugin/" target="_blank">Layer Slider</a>
+									</td>
+									<td>
+										Responsive jQuery Slider Plugin
+									</td>
+									<td>
+										js/layerslider/...
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://masonry.desandro.com" target="_blank">Masonry</a>
+									</td>
+									<td>
+										Masonry is a JavaScript grid layout library. It works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall.
+									</td>
+									<td>
+										js/masonry.pkgd.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://morrisjs.github.io/morris.js" target="_blank">Morris</a>
+									</td>
+									<td>
+										Morris.js - pretty time-series line graphs
+									</td>
+									<td>
+										js/morris.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://raphaeljs.com/" target="_blank">Raphael</a>
+									</td>
+									<td>
+										Raphaël is a small JavaScript library that should simplify your work with vector graphics on the web. If you want to create your own specific chart or image crop and rotate widget, for example, you can achieve it simply and easily with this library.
+									</td>
+									<td>
+										js/raphael.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="https://github.com/videojs/video.js/" target="_blank">Video.js</a>
+									</td>
+									<td>
+										HTML5 Video Player Build Status
+									</td>
+									<td>
+										js/video.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://egorkhmelev.github.io/jslider/" target="_blank">jQuery Slider plugin</a>
+									</td>
+									<td>
+										jQuery Slider is easy to use and multifunctional jQuery plugin that supports any webkit based touch mobile devices such as iPhone/iPod/iPad and Android.
+									</td>
+									<td>
+										js/price-regulator/...
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://livicons.com/" target="_blank">LivIcons</a>
+									</td>
+									<td>
+										Truly animated icon pack with power of scalable vector graphic for clean and perfect look at any devices.
+									</td>
+									<td>
+										js/livicons-1.3.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://msurguy.github.io/ladda-bootstrap/" target="_blank">Ladda UI for Bootstrap 3</a>
+									</td>
+									<td>
+										Original UI concept by @hakimel which merges loading indicators into the action that invoked them. Primarily intended for use with forms where it gives users immediate feedback upon submit rather than leaving them wondering while the browser does its thing.
+									</td>
+									<td>
+										js/ladda.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://jplayer.org/" target="_blank">jPlayer</a>
+									</td>
+									<td>
+										The jQuery HTML5 Audio / Video Library
+									</td>
+									<td>
+										js/jplayer/...
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://www.eyecon.ro/bootstrap-datepicker/?utm_source=twitterfeed&utm_medium=twitter" target="_blank">Datepicker for Bootstrap</a>
+									</td>
+									<td>
+										Add datepicker picker to field or to any other element.
+									</td>
+									<td>
+										js/bootstrap-datepicker.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://bootstrapvalidator.com/" target="_blank">BootstrapValidator</a>
+									</td>
+									<td>
+										The best jQuery plugin to validate form fields designed to use with Bootstrap 3
+									</td>
+									<td>
+										js/bootstrapValidator.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										country.js
+									</td>
+									<td>
+										jQuery counter
+									</td>
+									<td>
+										js/country.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://www.seanmccambridge.com/tubular/" target="_blank">jQuery tubular</a>
+									</td>
+									<td>
+										Tubular is a jQuery plugin that lets you set a YouTube video as your page background.
+									</td>
+									<td>
+										js/jquery.tubular.1.0.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="https://gist.github.com/galambalazs/6477177/" target="_blank">Smooth Scroll</a>
+									</td>
+									<td>
+										A lightweight script to animate scrolling to anchor links.
+									</td>
+									<td>
+										js/SmoothScroll.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://fgnass.github.io/spin.js/" target="_blank">spin.js</a>
+									</td>
+									<td>
+										Spin.js dynamically creates spinning activity indicators that can be used as resolution-independent replacement for AJAX loading GIFs.
+									</td>
+									<td>
+										js/spin.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Theme scripts
+									</td>
+									<td>
+										Contains all of the specific scripts for the theme.
+									</td>
+									<td>
+										js/main.js
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+			</article>
+			<hr class="theme-white" />
+			
+			<article class="theme-white" id="fonts-used">
+				<section class="container">
+					<h2>
+						Font used
+					</h2>
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover align-left">
+							<tbody>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Location</th>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://www.google.com/webfonts" target="_blank">Arimo</strong>
+									</td>
+									<td>
+										Metornic Frontend uses Open Sans web font from google fonts: http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://fontawesome.io/" target="_blank">Font Awesome</a>
+									</td>
+									<td>
+										Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.
+									</td>
+									<td>
+										fonts/fontawesome-webfont...
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Social Icon
+									</td>
+									<td>
+										Social Icon gives you scalable vector social icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.
+									</td>
+									<td>
+										fonts/social-icons...
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://themes.themepunch.com/?theme=revolution_wp" target="_blank">Revicon</a>
+									</td>
+									<td>
+										Font for Revolution Slider
+									</td>
+									<td>
+										fonts/revicons...
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://fontawesome.io/" target="_blank">vjs</a>
+									</td>
+									<td>
+										Font for HTML5 video player
+									</td>
+									<td>
+										fonts/vjs...
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+			</article>
+		</main>
+		<footer class="footer theme-white">
+			<section class="underlay">
+				<div class="container">
+					<div class="copyright pull-left">
+						Copyright &copy; ItemBridge inc., 2014
+						<br />
+						<span class="caption">Progressive Theme</span> on Themeforest
+					</div>
+					<div class="social pull-right">
+						<a class="social icon-facebook" href="">
+						</a>
+						<a class="social icon-twitter" href="">
+						</a>
+						<a class="social" href="">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="11px" viewBox="0 0 24 13" style="enable-background:new 0 0 24 13;" xml:space="preserve">
+								<style type="text/css">
+									<![CDATA[
+										.st8{fill:#AAAAAA;}
+									]]>
+								</style>
+								<switch>
+									<g>
+										<path class="st8" d="M9.6,5.9c0.5-0.2,0.8-0.5,1.1-0.7c0.4-0.5,0.7-1.1,0.7-1.9c0-0.8-0.2-1.4-0.7-1.9C10,0.5,8.8,0,7,0H0v12.7    h6.5c0.7,0,1.4-0.1,2-0.2c0.6-0.1,1.2-0.3,1.6-0.6c0.4-0.3,0.8-0.6,1-1c0.4-0.6,0.6-1.3,0.6-2c0-0.7-0.2-1.3-0.6-1.9    C10.9,6.5,10.4,6.1,9.6,5.9z M2.9,2.2H6c0.7,0,1.3,0.1,1.7,0.2C8.3,2.6,8.5,3,8.5,3.6c0,0.5-0.2,0.9-0.6,1.1C7.5,4.9,7,5,6.4,5    H2.9V2.2z M7.9,10.3c-0.4,0.1-0.8,0.2-1.5,0.2H2.9V7.1h3.6c0.6,0,1.1,0.1,1.4,0.2C8.5,7.6,8.8,8,8.8,8.7C8.8,9.5,8.5,10,7.9,10.3z     M23.9,6.8c-0.1-0.7-0.4-1.4-0.9-1.9c-0.5-0.6-1.1-1.1-1.9-1.4c-0.7-0.3-1.6-0.4-2.5-0.4c-1.6,0-2.8,0.4-3.8,1.3    c-1,0.9-1.5,2.1-1.5,3.7c0,1.7,0.5,3,1.6,3.8c1.1,0.8,2.3,1.2,3.8,1.2c1.7,0,3.1-0.5,4-1.4c0.6-0.6,1-1.1,1-1.7H21    c-0.2,0.3-0.4,0.5-0.6,0.6C20,10.9,19.5,11,18.9,11c-0.6,0-1.1-0.1-1.5-0.3c-0.7-0.4-1.1-1-1.1-2H24C24,7.9,24,7.3,23.9,6.8z     M16.3,7.1C16.4,6.5,16.6,6,17,5.6c0.4-0.4,1-0.5,1.7-0.5c0.7,0,1.2,0.2,1.7,0.5c0.4,0.3,0.7,0.8,0.7,1.5H16.3z M22.5,1.3H15v1.3    h7.5V1.3z"/>
+									</g>
+									<foreignObject width="14" height="14">
+										<span class="fa">
+											&#xf0c1;
+										</span>
+									</foreignObject>
+								</switch>
+							</svg>
+						</a>
+						<a class="social" href="">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="14px" viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
+								<style type="text/css">
+									<![CDATA[
+										.st8{fill:#AAAAAA;}
+									]]>
+								</style>
+								<switch>
+									<path class="st7" d="M19.9,3c0,0-7.5-0.3-9.8,6.8c-1.7,5.5-1.2,7.4-1.2,7.4s-1.6,0.4-1.8-3.1c-0.3-3.4,0.6-5.6,0.6-5.6  s-3.8,2-3.7,6.2C4.2,19,7,24,13.8,24c6.8,0.1,9.7-7.4,9.2-11.7C22.4,7.9,20.2,3.2,19.9,3z"></path>
+									<foreignObject width="14" height="14">
+										<span class="fa">
+											
+										</span>
+									</foreignObject>
+								</switch>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+		</footer>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/magnific-popup.js" charset="utf-8"></script>
+		<!--mCustomScrollbar-->
+		<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+		<!--/mCustomScrollbar-->
+		<!--SyntaxHighlighter-->
+		<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+		<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js" type="text/javascript"></script>
+		<!--/SyntaxHighlighter-->
+		<!--Custom Select Menu-->
+		<script type="text/javascript" src="js/custom-select-menu.jquery.js"></script>
+		<!--/Custom Select Menu-->
+		<script type="text/javascript" src="js/documentation.js" charset="utf-8"></script>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	</body>
+</html>

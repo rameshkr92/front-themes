@@ -1,0 +1,102 @@
+.syntaxhighlighter-wrapper .underlay {
+	background-color : rgba( 0, 0, 0, 0.038 ) !important;/* #F5F5F5 -> opacity */
+}
+.syntaxhighlighter {
+	background-color : #FFF !important;
+}
+.syntaxhighlighter .line.alt1 {
+}
+.syntaxhighlighter .line.alt2 {
+}
+.syntaxhighlighter .line.highlighted.alt1,
+.syntaxhighlighter .line.highlighted.alt2 {
+	background-color : rgba( 0, 0, 0, 0.07 ) !important;/* #EDEDED -> opacity */
+}
+.syntaxhighlighter .line.highlighted.number {
+	color : #000 !important;
+}
+.syntaxhighlighter table caption {
+	color : #000 !important;
+}
+.syntaxhighlighter .gutter {
+	/*
+	background-color : rgba( 0, 0, 0, 0.038 ) !important;*//* #F5F5F5 -> opacity */
+	color : rgba( 0, 0, 0, 0.304 ) !important;/* #AAA -> opacity / #F5F5F5 -> opacity */
+}
+.syntaxhighlighter .gutter .line.highlighted {
+	background-color : rgba( 0, 0, 0, 0.03 ) !important;/* #EDEDED -> opacity / #F5F5F5 -> opacity */
+	color : rgba( 0, 0, 0, 0.281 ) !important;/* #AAA -> opacity / #EDEDED -> opacity */
+}
+.syntaxhighlighter.printing .line .content {
+	border : none !important;
+}
+.syntaxhighlighter.collapsed {
+	overflow : visible !important;
+}
+.syntaxhighlighter.collapsed .toolbar {
+	color : #00F !important;
+	background : #FFF !important;
+	border : 1px solid #6CE26C !important;
+}
+.syntaxhighlighter.collapsed .toolbar a {
+	color : #00F !important;
+}
+.syntaxhighlighter.collapsed .toolbar a:hover {
+	color : #F00 !important;
+}
+.syntaxhighlighter .toolbar {
+	color : #FFF !important;
+	background : #6CE26C !important;
+	border : none !important;
+}
+.syntaxhighlighter .toolbar a {
+	color : #FFF !important;
+}
+.syntaxhighlighter .toolbar a:hover {
+	color : black !important;
+}
+.syntaxhighlighter .plain, .syntaxhighlighter .plain a {
+	color : #2F3E6F !important;
+}
+.syntaxhighlighter .comments, .syntaxhighlighter .comments a {
+	color : #AAA !important;
+}
+.syntaxhighlighter .string, .syntaxhighlighter .string a {
+	color : #D40746 !important;
+}
+.syntaxhighlighter .keyword {
+	color : #2F3E6F !important;
+}
+.syntaxhighlighter .preprocessor {
+	color : #CCC !important;
+}
+.syntaxhighlighter .variable {
+	color : #AA7700 !important;
+}
+.syntaxhighlighter .value {
+	color : #009900 !important;
+}
+.syntaxhighlighter .functions {
+	color : #FF1493 !important;
+}
+.syntaxhighlighter .constants {
+	color : #0066CC !important;
+}
+.syntaxhighlighter .script {
+	font-weight : bold !important;
+	color : #006699 !important;
+	background-color : none !important;
+}
+.syntaxhighlighter .color1,
+.syntaxhighlighter .color1 a {
+	color : #31923D !important;
+}
+.syntaxhighlighter .color2, .syntaxhighlighter .color2 a {
+	color : #FF1493 !important;
+}
+.syntaxhighlighter .color3, .syntaxhighlighter .color3 a {
+	color : #F00 !important;
+}
+.syntaxhighlighter .keyword {
+	font-weight : bold !important;
+}
